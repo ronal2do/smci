@@ -997,8 +997,6 @@
             <hr>
              <div class="columns is-vcentered is-centered">
            
-                 
-
                   <a class="button is-success is-outlined is-inverted is-facebook" href="{{ url('redirect') }}">
                     <span class="icon">
                       <i class="fa fa-facebook-official"></i>
