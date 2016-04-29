@@ -94,7 +94,16 @@ span.numero{
     -ms-transform: skew(-33deg); /* IE */
         transform: skew(-33deg); /* Padrão */
 }
-
+div#banner.hero-content{
+  background-image: url('../../imagens/banner.jpg');
+  background-size: cover;
+}
+div#tri.hero-content{
+    background-image: url('../../imagens/tri.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+select.select{color: #aeb1b5;}
 
 h3.title.is-2{color: #5A6703;}
 p{color:#58595A;}
@@ -117,6 +126,17 @@ span.titulo-juntos.contraste{
   -webkit-text-fill-color: yellow;
   background:transparent;
 }
+div#banner.hero-content.contraste{
+  background-image: none;
+  background-size: cover;
+}
+div#tri.hero-content.contraste{
+    background-image: none;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
 .notification.is-success.is-text-left.contraste,
 .notification.is-primary.is-text-left.contraste{
   background:transparent;

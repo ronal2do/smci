@@ -39,7 +39,7 @@
                         <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                             <i class="fa fa-times icon"></i>
                         </button>
-                        <li class="dropdown">
+                       <!--  <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-comments-o"></i></a>
                             <ul class="dropdown-menu animated fadeInDown">
                                 <li class="title">
@@ -49,44 +49,51 @@
                                     No new notification
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+                        
+                        @if  (Auth::user()->perm == 'dom')
                         <li class="dropdown danger">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-star-half-o"></i> 4</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-plus"></i> </a>
                             <ul class="dropdown-menu danger  animated fadeInDown">
                                 <li class="title">
-                                    Notification <span class="badge pull-right">4</span>
+                                    Controle 
                                 </li>
                                 <li>
                                     <ul class="list-group notifications">
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge">1</span> <i class="fa fa-exclamation-circle icon"></i> new registration
+                                                <span class="badge">1</span> <i class="fa fa-exclamation-circle icon"></i> Usuário
                                             </li>
                                         </a>
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge success">1</span> <i class="fa fa-check icon"></i> new orders
+                                                <span class="badge success">1</span> <i class="fa fa-check icon"></i> Postagem
                                             </li>
                                         </a>
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge danger">2</span> <i class="fa fa-comments icon"></i> customers messages
+                                                <span class="badge danger">2</span> <i class="fa fa-play icon"></i> Vídeo
                                             </li>
                                         </a>
                                         <a href="#">
-                                            <li class="list-group-item message">
-                                                view all
+                                            <li class="list-group-item">
+                                                <span class="badge warning">2</span> <i class="fa fa-play icon"></i> Publicidade
                                             </li>
                                         </a>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        @endif
+    
                         <li class="dropdown profile">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu animated fadeInDown">
                                 <li class="profile-img">
-                                   <img src="http://graph.facebook.com/{{ Auth::user()->social->provider_user_id }}/picture?width=300&height=300" class="profile-img">
+                                    @if (Auth::user()->social != '')
+                                       <img src="http://graph.facebook.com/{{ Auth::user()->social->provider_user_id }}/picture?width=300&height=300" class="profile-img">
+                                    @endif
+                                        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Sem%20foto&w=300&h=300" class="profile-img">
                                 </li>
                                 <li>
                                     <div class="profile-info">
