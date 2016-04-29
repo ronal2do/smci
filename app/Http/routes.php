@@ -20,3 +20,6 @@ Route::get('/callback', 'SocialAuthController@callback');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/home/video/{slug}', 'HomeController@video');
+Route::get('/home/video', 'HomeController@create');
+Route::post('/home/video', 'HomeController@store');

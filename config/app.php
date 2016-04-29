@@ -162,6 +162,8 @@ return [
 
         Laravel\Socialite\SocialiteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        
+        'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 
     ],
 

@@ -12,7 +12,12 @@ class CreateNewsletterTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('newsletter', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('email')->unique()->nullable();            
+            $table->timestamps();
+        });
+
     }
 
     /**
@@ -22,6 +27,6 @@ class CreateNewsletterTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('newsletter');
     }
 }

@@ -8,17 +8,17 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- CSS Libs -->
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/checkbox3.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/dataTables.bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="backend/lib/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/checkbox3.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/select2.min.css">
     <!-- CSS App -->
-    <link rel="stylesheet" type="text/css" href="backend/css/style.css">
-    <link rel="stylesheet" type="text/css" href="backend/css/themes/flat-blue.css">
+    <link rel="stylesheet" type="text/css" href="/backend/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/backend/css/themes/flat-blue.css">
 </head>
 
 <body class="flat-blue">
@@ -70,7 +70,7 @@
                                                 <span class="badge success">1</span> <i class="fa fa-check icon"></i> Postagem
                                             </li>
                                         </a>
-                                        <a href="#">
+                                        <a href="/home/video">
                                             <li class="list-group-item">
                                                 <span class="badge danger">2</span> <i class="fa fa-play icon"></i> Vídeo
                                             </li>
@@ -120,20 +120,20 @@
         </footer>
        
     <!-- Javascript Libs -->
-    <script type="text/javascript" src="backend/lib/js/jquery.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/Chart.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/select2.full.min.js"></script>
-    <script type="text/javascript" src="backend/lib/js/ace/ace.js"></script>
-    <script type="text/javascript" src="backend/lib/js/ace/mode-html.js"></script>
-    <script type="text/javascript" src="backend/lib/js/ace/theme-github.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/Chart.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/ace/ace.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/ace/mode-html.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/ace/theme-github.js"></script>
     <!-- Javascript -->
-    <script type="text/javascript" src="backend/js/app.js"></script>
-    <script type="text/javascript" src="backend/js/index.js"></script>
+    <script type="text/javascript" src="/backend/js/app.js"></script>
+    <script type="text/javascript" src="/backend/js/index.js"></script>
 </body>
 
 </html>
