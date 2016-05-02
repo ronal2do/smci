@@ -75,51 +75,24 @@
                                 </div>
                                 <div class="card-body no-padding">
                                     <ul class="message-list">
-                                        <a href="#">
+                                      
+                                
+                                        @forelse ($videos as $v)
+                                        <a href="/home/video/{{ $v->slug }}">
                                             <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
+                                                <img src="http://img.youtube.com/vi/{{ $v->url }}/2.jpg" class="profile-img pull-left">
                                                 <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">12 min ago</span>
+                                                    <div><span class="username">{{ $v->titulo }}</span> 
                                                     </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
+                                                    
                                                 </div>
                                             </li>
                                         </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">15 min ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">2 hour ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">1 day ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#" id="message-load-more">
-                                            <li class="text-center load-more">
-                                                <i class="fa fa-refresh"></i> load more..
-                                            </li>
-                                        </a>
+                                        @empty
+                                        @endforelse
+
+
+
                                     </ul>
                                 </div>
                             </div>
@@ -197,10 +170,13 @@
                     <div class="row  no-margin-bottom">
                         <div class="col-sm-8 col-xs-12">
                             <div class="row">
-                                <div class="col-xs-12">                       
+                                <div class="col-xs-12">   
+                                    @if ( $video != '')                    
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
                                     </div>
+                                    @endif
+                                    <p>...</p>
                                   <!--   $last_for_user = Timelog::where('user_id', $user_id)->orderBy('id', 'desc')->first(); -->
                                 </div>
                             </div>
