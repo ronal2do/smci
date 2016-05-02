@@ -18,7 +18,7 @@ class MensagemController extends Controller
         $dadosForm = $request->all();
         $mensagem = Mensagem::create($dadosForm);
         // dd($dadosForm);
-        return view('pages.home');    
+        return redirect()->route('home'); 
     }
 
     public function newsletter(Request $request)
@@ -26,7 +26,20 @@ class MensagemController extends Controller
         $dadosForm = $request->all();
         $newsletter = Newsletter::create($dadosForm);
         // dd($dadosForm);
-        return view('pages.home');    
+        return redirect()->route('home'); 
+    }
+
+    public function ver($id)
+    {
+        $m = Mensagem::find($id);
+        return view('painel.mensagem', compact('m'));    
+    }
+
+    public function destroy($id)
+    {
+        $m = Mensagem::find($id);
+        $m->delete();
+        return redirect()->route('painel.home'); 
     }
 
 

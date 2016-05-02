@@ -69,7 +69,7 @@
                             <div class="card card-success">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <div class="title"><i class="fa fa-play"></i> Ultimos vídeos</div>
+                                        <div class="title"><i class="fa fa-play"></i> Últimos vídeos</div>
                                     </div>
                                     <div class="clear-both"></div>
                                 </div>
@@ -95,20 +95,20 @@
                             <div class="card card-success">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <div class="title"><i class="fa fa-comments-o"></i> Ultimas mensagens</div>
+                                        <div class="title"><i class="fa fa-comments-o"></i> Últimas mensagens</div>
                                     </div>
                                     <div class="clear-both"></div>
                                 </div>
                                 <div class="card-body no-padding">
                                     <ul class="message-list">
                                         @forelse ($mensagens as $m)
-                                        <a href="#">
+                                        <a href="/home/mensagem/{{ $m->id }}">
                                             <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
+                                                <span class="profile-img pull-left" style="margin-left: 20px;"><i class="icon fa fa-envelope-o fa-4x"></i></span>
                                                 <div class="message-block">
                                                     <div><span class="username">{{ $m->nome }}</span> <span class="message-datetime"style="float: right;">{{ date('d/m/Y', strtotime($m->created_at)) }}</span>
                                                     </div>
-                                                    <div class="message">{{ $m->mensagem }}</div>
+                                                    <div class="message">{!! $m->mensagem !!}</div>
                                                 </div>
                                             </li>
                                         </a>

@@ -6,12 +6,10 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
-use App\Video;
 use App\User;
-use App\Mensagem;
-use App\Newsletter;
+use DB;
 
-class HomeController extends Controller
+class UsersController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -32,39 +30,40 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $video = Video::where('isfeatured', 'on')->orderBy('id', 'desc')->first();
-        $videos = Video::orderBy('id', 'desc')->take(4)->get();
-        $vidadm = Video::orderBy('id', 'desc')->take(4)->get();
-        $vidct = Video::count();
+     
+        $users = User::get();
         $userct = User::count();
-        $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
-        $newsletters = Newsletter::orderBy('id', 'desc')->take(4)->get();
 
-        return view('painel.home', compact('video', 'videos','vidadm', 'vidct', 'userct', 'mensagens' , 'newsletters'));
+        return view('painel.users.index', compact('users'));
     }
 
-    public function video($slug)
+    public function show($id)
     {
         $video = Video::findBySlug($slug);
         $videos = Video::orderBy('id', 'desc')->take(4)->get();
         $vidadm = Video::orderBy('id', 'desc')->take(4)->get();
         $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
-        return view('painel.video', compact('video', 'videos','vidadm', 'mensagens' ));
-          
-    }
-    public function create()
-    {
-        return view('painel.criar-v');     
+        return view('users.ver', compact('video', 'videos','vidadm', 'mensagens' )); 
     }
 
-    public function store(Request $request)
+    public function set($id)
     {
-        $dadosForm = $request->all();
-        $post = Video::create($dadosForm);
-        // dd($dadosForm);
-        return redirect()->route('painel.home'); 
-          
+        $user = User::findOrFail($id);
+
+        if ($user->perm == 'user') {
+        DB::table('users')
+            ->where('id', $id)
+            ->update(['perm' => 'dom']);
+        }else{
+        DB::table('users')
+            ->where('id', $id)
+            ->update(['perm' => 'user']);
+            
+      	 }
+		$user->save();  
+        return redirect()->route('users'); 
     }
+    
 
     public function destroy($slug)
     {
