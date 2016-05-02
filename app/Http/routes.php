@@ -23,7 +23,11 @@ Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
-Route::get('/home/video/{slug}', 'HomeController@video');
+Route::get('/home', ['uses'=>'HomeController@index', 'as'=> 'painel.home']);
+Route::get('/home/video/{slug}', ['uses'=>'HomeController@video', 'as'=> 'video.ver']);
+Route::get('/home/video/{slug}/delete', 'HomeController@destroy');
 Route::get('/home/video', 'HomeController@create');
 Route::post('/home/video', 'HomeController@store');
+
+Route::post('/newsletter', 'MensagemController@newsletter');
+Route::post('/mensagem', 'MensagemController@mensagem');

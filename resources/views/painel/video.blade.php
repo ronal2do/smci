@@ -1,10 +1,6 @@
 @extends('painel.app')
 
 @section('content')
-
-
-           
-              
             <div class="container-fluid">
                 <div class="side-body padding-top">
                     
@@ -14,8 +10,18 @@
                                 <div class="col-xs-12">                       
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
+                                    </div>                                   
+                                    @if  (Auth::user()->perm == 'dom')                                   
+                                    <div class="card card-success">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <div class="title">
+                                                    <a href="/home/video/{{ $video->slug }}/delete"><i class="fa fa-times-circle"></i></a>                     
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                  <!--   $last_for_user = Timelog::where('user_id', $user_id)->orderBy('id', 'desc')->first(); -->
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -43,8 +49,6 @@
                                         </a>
                                         @empty
                                         @endforelse
-                                       
-                                       
                                     </ul>
                                 </div>
                             </div>
@@ -53,10 +57,7 @@
                 </div>
             </div>
 
-
-
-             <div class="container-fluid">
-               
+             <div class="container-fluid">     
                     <div class="row no-margin-bottom">
                         <div class="col-sm-12 col-xs-12">
                             <div class="row">

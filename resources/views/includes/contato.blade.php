@@ -10,22 +10,24 @@
         </h3>
         <h4 class="subtitle is-4">Informações e dúvidas basta entrar em contato com a gente.</h4>
           <div class="column"> <!-- formulario de contato -->
+           {!! Form::open(array('url' => '/mensagem')) !!}
+
                 <div class="control is-horizontal">
-                
+               
                   <div class="control is-grouped">
-                    <input class="input" type="text" placeholder="Nome">
-                    <input class="input" type="email" placeholder="Email">
+                    <input class="input" type="text" placeholder="Nome" name="nome">
+                    <input class="input" type="email" placeholder="Email" name="email">
                   </div>
                 </div>
                 <div class="control is-horizontal">
                  
                   <div class="control">
                     <div class="select is-fullwidth">
-                      <select class="select">
-                        <option>Inscrição</option>
-                        <option>Assistir</option>
-                        <option>Palestrante</option>
-                        <option>Staff</option>
+                      <select class="select" name="assunto">
+                        <option value="Inscrição">Inscrição</option>
+                        <option value="Assistir">Assistir</option>
+                        <option value="Palestrante">Palestrante</option>
+                        <option value="Staff">Staff</option>
                       </select>
                     </div>
                   </div>
@@ -33,7 +35,7 @@
                 <div class="control is-horizontal">
                   
                   <div class="control">
-                    <textarea class="textarea" placeholder="Diga como podemos ajudar"></textarea>
+                    <textarea class="textarea" name="mensagem" placeholder="Diga como podemos ajudar"></textarea>
                   </div>
 
                 </div>
@@ -43,18 +45,7 @@
                     <button class="button is-primary">Enviar</button>
                   </div>
                </div>
-                        <!-- mensagens -->
-                         <!--   <div class="notification is-success">
-                            <button class="delete"></button>
-                           Mensagem enviada, breve retornaremos
-                          </div>
-
-                          <div class="notification is-danger">
-                            <button class="delete"></button>
-                            Erro, tente novamente
-                          </div> -->
-                        <!-- /mensagens -->
-
+                {!! Form::close() !!} 
           </div> <!-- /formulario de contato -->
 
       </div>

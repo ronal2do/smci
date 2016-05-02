@@ -17,7 +17,7 @@ class CreateVIdeosTable extends Migration
             $table->string('titulo');
             $table->string('url');
             $table->string('slug');
-            $table->boolean('isfeatured')->default(false);
+            $table->string('isfeatured')->nullable();
             $table->timestamps();
         });
 

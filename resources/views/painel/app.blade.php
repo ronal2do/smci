@@ -29,7 +29,7 @@
                     <div class="navbar-header">
                        
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active">Dashboard</li>
+                            <li class="active"><a href="/home">Dashboard</a></li>
                         </ol>
                         <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                             <i class="fa fa-th icon"></i>
@@ -56,28 +56,28 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-plus"></i> </a>
                             <ul class="dropdown-menu danger  animated fadeInDown">
                                 <li class="title">
-                                    Controle 
+                                    Adicionar 
                                 </li>
                                 <li>
                                     <ul class="list-group notifications">
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge">1</span> <i class="fa fa-exclamation-circle icon"></i> Usuário
+                                                <i class="fa fa-exclamation-circle icon"></i> Usuários
                                             </li>
                                         </a>
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge success">1</span> <i class="fa fa-check icon"></i> Postagem
+                                               <i class="fa fa-check icon"></i> Postagem
                                             </li>
                                         </a>
                                         <a href="/home/video">
                                             <li class="list-group-item">
-                                                <span class="badge danger">2</span> <i class="fa fa-play icon"></i> Vídeo
+                                                <i class="fa fa-play icon"></i> Vídeo
                                             </li>
                                         </a>
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <span class="badge warning">2</span> <i class="fa fa-play icon"></i> Publicidade
+                                                <i class="fa fa-play icon"></i> Publicidade
                                             </li>
                                         </a>
                                     </ul>

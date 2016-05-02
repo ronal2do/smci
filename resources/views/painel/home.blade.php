@@ -13,7 +13,7 @@
                                     <div class="card-body">
                                         <i class="icon fa fa-user fa-4x"></i>
                                         <div class="content">
-                                            <div class="title">50</div>
+                                            <div class="title">{{ $userct }}</div>
                                             <div class="sub-title">Usuários</div>
                                         </div>
                                         <div class="clear-both"></div>
@@ -27,7 +27,7 @@
                                     <div class="card-body">
                                         <i class="icon fa fa-comments fa-4x"></i>
                                         <div class="content">
-                                            <div class="title">23</div>
+                                            <div class="title">{{ $mensagens->count() }}</div>
                                             <div class="sub-title">Mensagens</div>
                                         </div>
                                         <div class="clear-both"></div>
@@ -55,7 +55,7 @@
                                     <div class="card-body">
                                         <i class="icon fa fa-rss fa-4x"></i>
                                         <div class="content">
-                                            <div class="title">16</div>
+                                            <div class="title">{{ $newsletters->count() }}</div>
                                             <div class="sub-title">Inscritos</div>
                                         </div>
                                         <div class="clear-both"></div>
@@ -74,32 +74,24 @@
                                     <div class="clear-both"></div>
                                 </div>
                                 <div class="card-body no-padding">
-                                    <ul class="message-list">
-                                      
-                                
-                                        @forelse ($videos as $v)
+                                    <ul class="message-list">                                     
+                                        @forelse ($vidadm as $v)
                                         <a href="/home/video/{{ $v->slug }}">
                                             <li>
                                                 <img src="http://img.youtube.com/vi/{{ $v->url }}/2.jpg" class="profile-img pull-left">
                                                 <div class="message-block">
                                                     <div><span class="username">{{ $v->titulo }}</span> 
-                                                    </div>
-                                                    
+                                                    </div>                    
                                                 </div>
                                             </li>
                                         </a>
                                         @empty
                                         @endforelse
-
-
-
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-sm-6 col-xs-12">
-                           
                             <div class="card card-success">
                                 <div class="card-header">
                                     <div class="card-title">
@@ -109,51 +101,19 @@
                                 </div>
                                 <div class="card-body no-padding">
                                     <ul class="message-list">
+                                        @forelse ($mensagens as $m)
                                         <a href="#">
                                             <li>
                                                 <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
                                                 <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">12 min ago</span>
+                                                    <div><span class="username">{{ $m->nome }}</span> <span class="message-datetime"style="float: right;">{{ date('d/m/Y', strtotime($m->created_at)) }}</span>
                                                     </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
+                                                    <div class="message">{{ $m->mensagem }}</div>
                                                 </div>
                                             </li>
                                         </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">15 min ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">2 hour ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#">
-                                            <li>
-                                                <img src="backend/img/profile/profile-1.jpg" class="profile-img pull-left">
-                                                <div class="message-block">
-                                                    <div><span class="username">Tui2Tone</span> <span class="message-datetime">1 day ago</span>
-                                                    </div>
-                                                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                        <a href="#" id="message-load-more">
-                                            <li class="text-center load-more">
-                                                <i class="fa fa-refresh"></i> load more..
-                                            </li>
-                                        </a>
+                                        @empty
+                                        @endforelse
                                     </ul>
                                 </div>
                             </div>
@@ -176,7 +136,9 @@
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
                                     </div>
                                     @endif
-                                    <p>...</p>
+                                     <div class="embed-responsive embed-responsive-16by9">
+                                      
+                                    </div>
                                   <!--   $last_for_user = Timelog::where('user_id', $user_id)->orderBy('id', 'desc')->first(); -->
                                 </div>
                             </div>
