@@ -65,12 +65,12 @@ class UsersController extends Controller
     }
     
 
-    public function destroy($slug)
+    public function destroy($id)
     {
-        $v = Video::findBySlug($slug);
+        $v = User::findOrFail($id);
         $v->delete();
 
-        return redirect()->route('painel.home'); 
+        return redirect()->route('users'); 
           
     }
 

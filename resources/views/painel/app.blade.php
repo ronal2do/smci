@@ -60,7 +60,7 @@
                                 </li>
                                 <li>
                                     <ul class="list-group notifications">
-                                        <a href="#">
+                                        <a href="/home/usuarios">
                                             <li class="list-group-item">
                                                 <i class="fa fa-exclamation-circle icon"></i> Usuários
                                             </li>
@@ -93,7 +93,7 @@
                                     @if (Auth::user()->social != '')
                                        <img src="http://graph.facebook.com/{{ Auth::user()->social->provider_user_id }}/picture?width=300&height=300" class="profile-img">
                                     @endif
-                                        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Sem%20foto&w=300&h=300" class="profile-img">
+                                        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Fotos%20apenas%20para%20usu%C3%A1rios%20logados%20pelo%20facebook&w=300&h=300" class="profile-img">
                                 </li>
                                 <li>
                                     <div class="profile-info">
@@ -133,7 +133,7 @@
     <script type="text/javascript" src="/backend/lib/js/ace/theme-github.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="/backend/js/app.js"></script>
-    <script type="text/javascript" src="/backend/js/index.js"></script>
+  <!--   <script type="text/javascript" src="/backend/js/index.js"></script> -->
 </body>
 
 </html>

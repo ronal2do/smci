@@ -11,7 +11,7 @@
                                 <div class="card-header">
 
                                     <div class="card-title">
-                                    <div class="title">Table</div>
+                                    <div class="title">Usuários</div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -37,8 +37,8 @@
                                             <tr>
                                                 <td>{{$u->name}}</td>
                                                 <td>{{$u->email}}</td>
-                                                <td>{{$u->perm}}</td>
-                                                <td><a href="/home/usuario/{{$u->id}}/set">Setar</a></td>
+                                                <td>{{$u->perm}} | <strong><a href="/home/usuario/{{$u->id}}/set"><i class="fa fa-sort"></i> Mudar</a></strong></td>
+                                                <td><strong><a href="/home/usuario/{{$u->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong></td>
                                             </tr>
                                           @endforeach
                                         </tbody>

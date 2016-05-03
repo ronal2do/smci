@@ -68,16 +68,58 @@
   <div class="modal-content">
       <div class="box">
         <div class="column"> <!-- formulario de contato -->
-             <h4 class="subtitle is-4">Antes de assitir fale um pouco de você.</h4>
-             <p>Pode usar o facebook também (-- marcação).</p>
+             <h4 class="subtitle is-4">Acompanhe ao vivo a transmissão online do nosso seminário.</h4>
+             <p>Preencha os dados para começar a assistir.​</p>
            <br>
             <div class="control">
-              
-              <div class="control is-grouped">
-                <input class="input" type="text" placeholder="Nome">
-                <input class="input" type="email" placeholder="Email">
-                  <button class="button is-primary">Enviar</button>
-              </div>
+<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                      {!! csrf_field() !!}
+                      <div class="control is-grouped">
+                       <input type="text" class="input" name="name" value="{{ old('name') }}" placeholder="Nome">
+
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                        
+                        <input type="email" class="input" type="email" name="email" value="{{ old('name') }}" placeholder="Email">
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                      </div>
+                      <div class="control is-grouped">
+                      
+                            
+
+                                <input type="password" class="input" name="password" placeholder="Senha">
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                        
+
+                       
+                                <input type="password" class="input" name="password_confirmation" placeholder="Confirmar senha">
+
+                                @if ($errors->has('password_confirmation'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                    </span>
+                                @endif
+                         
+                         
+                      </div>
+                      <div class="control is-grouped">
+                    
+                          <button type="submit" class="button is-primary">Enviar</button>
+                      </div>
+
+                </form>
             </div>
             <hr>
              <div class="columns is-vcentered is-centered">

@@ -18,12 +18,12 @@
         <div class="header-left" style="padding: 5px 5px;">
          
             <h3 class="title is-2 logo-titulo--fonte">
-              
+              <a href="/">
                 <span class="icon is-large">
                   <i class="fa fa-th-large"></i>
                 </span>
                 SM<strong>CI</strong>
-             
+             </a>
             </h3>
           
         </div>
@@ -54,9 +54,9 @@
           <span class="header-item">
             <a href="#contato">Contato <span class="numero">[6]</span></a>
           </span>
-   <!--   <span class="header-item">
-            <a href="/assistir">Assista<span class="numero">[7]</span></a>
-          </span> -->
+          <span class="header-item">
+            <a data-target="#modal2" class="modal-button">Assista<span class="numero">[7]</span></a>
+          </span>
         </div>
       </div>
     </header>
