@@ -40,3 +40,11 @@ Route::post('/mensagem', 'MensagemController@mensagem');
 
 Route::get('/home/mensagem/{id}', ['uses'=>'MensagemController@ver', 'as'=> 'mensagem.ver']);
 Route::get('/home/mensagem/{id}/destroy', ['uses'=>'MensagemController@destroy', 'as'=> 'mensagem.destroy']);
+
+Route::get('/blog',['as'=>'blog' ,function () {
+    return view('blog.index');
+}]);
+
+Route::get('/blog/single',['as'=>'blog.single' ,function () {
+    return view('blog.single');
+}]);

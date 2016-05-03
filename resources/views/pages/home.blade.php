@@ -1,7 +1,69 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="hero is-success is-bold is-fullheight">
+  <div class="hero-header">
+    <header class="header">
+      <div class="container">
+        <div class="header-left" style="padding: 5px 5px;">
+         
+            <h3 class="title is-2 logo-titulo--fonte">
+              <a href="/">
+                <span class="icon is-large">
+                  <i class="fa fa-th-large"></i>
+                </span>
+                SM<strong>CI</strong>
+             </a>
+            </h3>
+          
+        </div>
+        <span id="header-toggle" class="header-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+          @include('includes.menu')
+      </div>
+    </header>
+  </div>
+  <div class="hero-content" id="banner">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-content" id="tri">
+      <div class="container" >
+        <h1 class="title">
+        <br>
+            <br>
+           <div class="column">
+            <div class="is-success is-text-center">
+                <br class="is-hidden-touch">
+                <br class="is-hidden-touch"> 
+                <br class="is-hidden-touch">
+                <span class="titulo-seminario">I Seminário Metropolitano Cidades Inteligentes</span><br>
+                <span class="titulo-juntos"> JUNTOS </span><br>
+                <span class="titulo-mobilidade">pela mobilidade saudável e eficiente</span>
+            </div>
+          </div>
 
+         
+
+
+       
+        </h1>
+        <div class="column" style="display: block;font-size: 1em;">
+              <h1 class="title">
+                <div class="is-success is-text-center">
+                  <span id="semanas" class="borda"></span>
+                  <span id="dias" class="borda"></span>              
+                  <span id="horas" class="borda"></span>
+                  <span id="minutos" class="borda is-hidden-touch"></span>
+                  <span id="segundos" class="borda is-hidden-touch"></span>
+              </div>
+              </h1>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
     <section id="oquee" class="section is-medium">
       <div class="container">
         <h3 class="title is-2">
@@ -685,5 +747,35 @@
     </section>
   
 @include('includes.contato')
+@include('includes.modal')
 
+@endsection
+
+@section('postscript')
+<script>
+  var end = new Date('07/09/2016 10:10 AM');
+      var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+      var timer;
+      function showRemaining() {
+          var now = new Date();
+          var distance = end - now;
+          if (distance < 0) {
+              clearInterval(timer);
+              document.getElementById('countdown').innerHTML = 'EVENTO EM ANDAMENTO!';
+              return;
+          }
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+          document.getElementById('dias').innerHTML = days + ' dias ';
+          document.getElementById('horas').innerHTML = hours + ' hrs ';
+          document.getElementById('minutos').innerHTML = minutes + ' mins ';
+          document.getElementById('segundos').innerHTML = seconds + ' segs';
+      }
+      timer = setInterval(showRemaining, 1000);
+</script>
 @endsection
