@@ -10,6 +10,8 @@ use App\Video;
 use App\User;
 use App\Mensagem;
 use App\Newsletter;
+use App\Post;
+use App\Categoria;
 
 class HomeController extends Controller
 {
@@ -34,13 +36,15 @@ class HomeController extends Controller
     {
         $video = Video::where('isfeatured', 'on')->orderBy('id', 'desc')->first();
         $videos = Video::orderBy('id', 'desc')->take(4)->get();
-        $vidadm = Video::orderBy('id', 'desc')->take(4)->get();
+        $categorias = Categoria::orderBy('id', 'desc')->get();
         $vidct = Video::count();
         $userct = User::count();
         $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
+        $posts = Post::orderBy('id', 'desc')->get();
+        
         $newsletters = Newsletter::orderBy('id', 'desc')->take(4)->get();
 
-        return view('painel.home', compact('video', 'videos','vidadm', 'vidct', 'userct', 'mensagens' , 'newsletters'));
+        return view('painel.home', compact('video', 'videos','categorias', 'vidct', 'userct', 'mensagens' , 'newsletters', 'posts'));
     }
 
     public function video($slug)

@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="side-body padding-top">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                             <a href="/home/usuarios">
                                 <div class="card red summary-inline">
                                     <div class="card-body">
@@ -21,7 +21,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                             <a href="#">
                                 <div class="card yellow summary-inline">
                                     <div class="card-body">
@@ -35,13 +35,13 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                            <a href="#">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <a href="/home/posts">
                                 <div class="card green summary-inline">
                                     <div class="card-body">
-                                        <i class="icon fa fa-tags fa-4x"></i>
+                                        <i class="icon fa fa-check fa-4x"></i>
                                         <div class="content">
-                                            <div class="title">280</div>
+                                            <div class="title">{{ $posts->count() }}</div>
                                             <div class="sub-title">Postagens</div>
                                         </div>
                                         <div class="clear-both"></div>
@@ -49,8 +49,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                            <a href="#">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <a href="/home/inscritos">
                                 <div class="card blue summary-inline">
                                     <div class="card-body">
                                         <i class="icon fa fa-rss fa-4x"></i>
@@ -63,6 +63,35 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <a href="/home/categorias">
+                                <div class="card purple summary-inline">
+                                    <div class="card-body">
+                                        <i class="icon fa fa-tags fa-4x"></i>
+                                        <div class="content">
+                                            <div class="title">{{ $categorias->count() }}</div>
+                                            <div class="sub-title">Categorias</div>
+                                        </div>
+                                        <div class="clear-both"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <div class="card white summary-inline">
+                                    <div class="card-body">
+                                        <i class="icon fa fa-play fa-4x"></i>
+                                        <div class="content">
+                                            <div class="title">{{ $vidct }}</div>
+                                            <div class="sub-title">Vídeos</div>
+                                        </div>
+                                        <div class="clear-both"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="row  no-margin-bottom">
                         <div class="col-sm-6 col-xs-12">
@@ -75,7 +104,7 @@
                                 </div>
                                 <div class="card-body no-padding">
                                     <ul class="message-list">                                     
-                                        @forelse ($vidadm as $v)
+                                        @forelse ($videos as $v)
                                         <a href="/home/video/{{ $v->slug }}">
                                             <li>
                                                 <img src="http://img.youtube.com/vi/{{ $v->url }}/2.jpg" class="profile-img pull-left">
@@ -106,7 +135,8 @@
                                             <li>
                                                 <span class="profile-img pull-left" style="margin-left: 20px;"><i class="icon fa fa-envelope-o fa-4x"></i></span>
                                                 <div class="message-block">
-                                                    <div><span class="username">{{ $m->nome }}</span> <span class="message-datetime"style="float: right;">{{ date('d/m/Y', strtotime($m->created_at)) }}</span>
+                                                    <div><span class="username">{{ $m->nome }}</span> <span class="message-datetime"style="float: right;">{{ $m->created_at->format('d.m.Y') }}
+                                                    {{ $m->created_at->diffForHumans() }}</span>
                                                     </div>
                                                     <div class="message">{!! $m->mensagem !!}</div>
                                                 </div>

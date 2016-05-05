@@ -672,3 +672,20 @@
 
 .flat-blue.landing-page .app-content-a {
   background-color: #EAEAEA; }
+
+  .card.purple {
+    background-color: purple;
+    color: #FFF;
+}
+.card.purple:hover{
+    background-color: #500950;
+    color: #FFF;
+}
+  .card.white {
+    background-color: white;
+    color: #000;
+}
+.card.white:hover{
+    background-color: #c5c5c5;
+    color: #000;
+}

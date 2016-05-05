@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/backend/lib/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="/backend/lib/css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/backend/lib/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/backend/lib/css/redactor.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="/backend/css/style.css">
     <link rel="stylesheet" type="text/css" href="/backend/css/themes/flat-blue.css">
@@ -62,10 +63,15 @@
                                     <ul class="list-group notifications">
                                         <a href="/home/usuarios">
                                             <li class="list-group-item">
-                                                <i class="fa fa-exclamation-circle icon"></i> Usuários
+                                                <i class="fa fa-user icon"></i> Usuários
                                             </li>
                                         </a>
-                                        <a href="#">
+                                        <a href="/home/categorias/criar">
+                                            <li class="list-group-item">
+                                               <i class="fa fa-tags icon"></i> Categorias
+                                            </li>
+                                        </a>
+                                        <a href="/home/posts/criar">
                                             <li class="list-group-item">
                                                <i class="fa fa-check icon"></i> Postagem
                                             </li>
@@ -77,7 +83,7 @@
                                         </a>
                                         <a href="#">
                                             <li class="list-group-item">
-                                                <i class="fa fa-play icon"></i> Publicidade
+                                                <i class="fa fa-rss icon"></i> Newsletter
                                             </li>
                                         </a>
                                     </ul>
@@ -115,7 +121,7 @@
         </div>
         <footer class="app-footer">
             <div class="wrapper">
-                <span class="pull-right">2.1 <a href="#"><i class="fa fa-long-arrow-up"></i></a></span> © 2016 Copyright.
+                <span class="pull-right"> <a href="#"><i class="fa fa-long-arrow-up"></i></a></span> © SMCI 2016 Copyright.
             </div>
         </footer>
        
@@ -128,11 +134,13 @@
     <script type="text/javascript" src="/backend/lib/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="/backend/lib/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="/backend/lib/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/backend/lib/js/redactor.min.js"></script>
     <script type="text/javascript" src="/backend/lib/js/ace/ace.js"></script>
     <script type="text/javascript" src="/backend/lib/js/ace/mode-html.js"></script>
     <script type="text/javascript" src="/backend/lib/js/ace/theme-github.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="/backend/js/app.js"></script>
+     @yield('post-script')
   <!--   <script type="text/javascript" src="/backend/js/index.js"></script> -->
 </body>
 

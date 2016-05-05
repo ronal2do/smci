@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="card-body">{!! Form::open(array('url' => 'home/video')) !!}
                                     <p>Receber apenas o ID do vídeo do youtube, segue depois do "?v=" como o exemplo abaixo</p><span style="color:#c5c5c5;">https://www.youtube.com/watch?v=</span><strong>JsfqsSJ0wVE</strong>
-                                    <div class="sub-title">TITULO</div>
+                                    <div class="sub-title">Título</div>
                                     <div>
                                         <input type="text" class="form-control" name="titulo" placeholder="titulo">
                                     </div>

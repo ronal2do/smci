@@ -68,7 +68,7 @@ return [
     */
 
 
-    'locale' => 'America/Sao_Paulo',
+    'locale' => 'pt_BR',
 
 
     /*
@@ -164,7 +164,9 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         
         'Cviebrock\EloquentSluggable\SluggableServiceProvider',
+        'App\Providers\CarbonLanguageProvider',
 
+        'Jenssegers\Date\DateServiceProvider',
     ],
 
     /*
@@ -213,6 +215,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Date' => Jenssegers\Date\Date::class,
         
     ],
 

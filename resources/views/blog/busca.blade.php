@@ -40,8 +40,33 @@
 </section>
 
 @include('includes.bmenu')
-  
-@forelse ( $posts as $p)
+
+<section class="section is-medium">
+      <div class="container">
+        <p class="subtitle is-4">
+         Suas buscas por <strong>{{ $str }}</strong>
+          @if ($postquerys->count() === 1)
+            encontraram <strong>{{$postquerys->count()}}</strong> resultado.
+          @elseif ($postquerys->count() > 1)
+            encontraram <strong>{{$postquerys->count()}}</strong> resultados.
+          @else
+            <strong>não</strong> encontraram resultados.
+            <div class="content is-medium">
+                <p>Tente pesquisar por outro termo.</br>
+               Volte para a <strong><a href="">HOME</a></strong></br>
+                ou veja esta sugestão <strong><a href="">I Seminário Metropolitano Cidades Inteligentes</a></strong>.</p>      
+            </div>
+
+          @endif
+        </p>
+        <h2 class="title is-2">
+         
+        </h2>
+        
+      </div>
+</section>
+
+@foreach ( $postquerys as $p)
     <section class="section is-medium">
       <div class="container">
          <div class="container">
@@ -55,31 +80,12 @@
         </h2>
         <div class="content is-medium">
          <p>{!! str_limit($p->texto, $limit = 95, $end = ' ... ') !!}</p>
-           <a class="button is-primary">Compartilhar</a>
+           
         </div>
          
 
         </div>
       </div>
     </section>
-    @empty
-     <section class="section is-medium">
-      <div class="container">
-        <p class="subtitle is-4">
-          Dia XX e XX de Julho
-        </p>
-        <h2 class="title is-2">
-          <a href="">
-            I Seminário Metropolitano Cidades Inteligentes
-          </a>
-        </h2>
-        <div class="content is-medium">
-          <p>O desafio foi lançado <br>
-              O <strong>I Seminário Metropolitano Cidades Inteligentes</strong>  – Juntos pela mobilidade sustentável e segura vai promover dois dias de palestras e debates sobre mobilidade urbana.</p>
-  
-
-        </div>
-      </div>
-    </section>
-  @endforelse  
+  @endforeach  
 @endsection
