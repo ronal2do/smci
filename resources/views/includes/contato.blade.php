@@ -9,11 +9,19 @@
          
         </h3>
         <h4 class="subtitle is-4">Informações e dúvidas basta entrar em contato com a gente.</h4>
+                  @unless($errors->isEmpty())
+                      <ul style="color:#C55A5A;">
+                      @foreach($errors->getMessages() as $error)
+                          <li>{{ $error[0] }}</li>
+                      @endforeach
+                      </ul>
+                  @endunless
+
           <div class="column"> <!-- formulario de contato -->
            {!! Form::open(array('url' => '/mensagem')) !!}
 
                 <div class="control is-horizontal">
-               
+                
                   <div class="control is-grouped">
                     <input class="input" type="text" placeholder="Nome" name="nome">
                     <input class="input" type="email" placeholder="Email" name="email">

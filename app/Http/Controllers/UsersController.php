@@ -30,10 +30,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-     
         $users = User::get();
         $userct = User::count();
-
         return view('painel.users.index', compact('users'));
     }
 
@@ -49,16 +47,12 @@ class UsersController extends Controller
     public function set($id)
     {
         $user = User::findOrFail($id);
-
         if ($user->perm == 'user') {
-        DB::table('users')
-            ->where('id', $id)
+        User::where('id', $id)
             ->update(['perm' => 'dom']);
         }else{
-        DB::table('users')
-            ->where('id', $id)
+        User::where('id', $id)
             ->update(['perm' => 'user']);
-            
       	 }
 		$user->save();  
         return redirect()->route('users'); 
@@ -69,7 +63,6 @@ class UsersController extends Controller
     {
         $v = User::findOrFail($id);
         $v->delete();
-
         return redirect()->route('users'); 
           
     }

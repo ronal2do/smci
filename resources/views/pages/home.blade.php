@@ -6,16 +6,7 @@
     <header class="header">
       <div class="container">
         <div class="header-left" style="padding: 5px 5px;">
-         
-            <h3 class="title is-2 logo-titulo--fonte">
-              <a href="/">
-                <span class="icon is-large">
-                  <i class="fa fa-th-large"></i>
-                </span>
-                SM<strong>CI</strong>
-             </a>
-            </h3>
-          
+           @include('includes.logo')
         </div>
         <span id="header-toggle" class="header-toggle">
           <span></span>

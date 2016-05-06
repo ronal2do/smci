@@ -190,7 +190,7 @@ i.fa.fa-audio-description{margin: -2px;}
     background-image: linear-gradient(141deg, #767D0B 0%, #5A6703 81%, #5A6703 100%);
 }
 
-.hero.is-success .header-icon, .hero.is-success a.header-item, .hero.is-success .header-item>a:not(.button){color:#DCC928;}
+.hero.is-success .header-icon, .hero.is-success a.header-item, .hero.is-success .header-item>a:not(.button){color:#F2F4B4;}
 .footer {
     background: #fff;}
 .button.is-success.is-inverted.is-outlined.is-facebook{background-color: transparent;
@@ -200,3 +200,17 @@ i.fa.fa-audio-description{margin: -2px;}
     border-color: #3b5998;
     color: #3b5998;}
 .button.is-primary:hover{background: #2aa198;}
+.share{ padding: 32px;}
+
+
+.hero.is-success .tabs.is-toggle li a{
+    color: #5a6703;
+}
+li.ui-tabs-active.ui-state-active"{
+    background: #5a6703;
+    color: #fbfbfb;
+}
+.hero.is-success .tabs.is-toggle li.is-active a:hover {
+  background-color:#2AA198;
+  color: #fbfbfb;
+}

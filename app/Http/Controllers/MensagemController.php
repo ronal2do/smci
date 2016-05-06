@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-
+use App\Http\Requests\ContatoRequest;
 use App\Mensagem; 
 use App\Newsletter;
 
@@ -13,7 +12,7 @@ class MensagemController extends Controller
 {
    
 
-    public function mensagem(Request $request)
+    public function mensagem(ContatoRequest $request)
     {
         $dadosForm = $request->all();
         $mensagem = Mensagem::create($dadosForm);
@@ -23,8 +22,22 @@ class MensagemController extends Controller
 
     public function newsletter(Request $request)
     {
+        $query = $request->input('email');
         $dadosForm = $request->all();
-        $newsletter = Newsletter::create($dadosForm);
+        $exists = Newsletter::where('email', $query)->first();
+
+        if ($exists)
+        {
+            Newsletter::where('email', $query)
+            ->update(['email' => $query]);
+        }
+
+        else
+        {
+          $newsletter = Newsletter::create($dadosForm);
+        }
+
+       
         // dd($dadosForm);
         return redirect()->route('home'); 
     }
@@ -41,8 +54,4 @@ class MensagemController extends Controller
         $m->delete();
         return redirect()->route('painel.home'); 
     }
-
-
-
-
 }

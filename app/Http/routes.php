@@ -12,11 +12,11 @@
 */
 
 Route::get('/',['as'=>'home' ,function () {
-    return view('pages.home');
+	return view('pages.home');
 }]);
 
 Route::get('/privacidade',function () {
-    return view('pages.privacidade');
+	return view('pages.privacidade');
 });
 
 Route::get('/redirect', 'SocialAuthController@redirect');

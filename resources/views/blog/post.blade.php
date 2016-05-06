@@ -6,14 +6,9 @@
     <header class="header">
       <div class="container">
         <div class="header-left" style="padding: 5px 5px;">
-            <h3 class="title is-2 logo-titulo--fonte">
-              <a href="/">
-                <span class="icon is-large">
-                  <i class="fa fa-th-large"></i>
-                </span>
-                SM<strong>CI</strong>
-             </a>
-            </h3>
+         
+              @include('includes.logo')
+          
         </div>
         <span id="header-toggle" class="header-toggle">
           <span></span>
@@ -26,13 +21,17 @@
   </div>
   <div class="hero-content" id="banner">
     <!-- Hero content: will be in the middle -->
+    
       <div class="container" >
         <br>
         <br>
         <br>
+       
       </div>
+ 
   </div>
 </section>
+
 
 @include('includes.bmenu')
 
@@ -40,7 +39,7 @@
       <div class="container">
          <div class="container">
           <p class="subtitle is-4">
-            {{ date('d M Y', strtotime($p->created_at)) }}
+            {{ $p->created_at->format('d.m.Y') }} <small>- {{ $p->created_at->diffForHumans() }}</small> 
           </p>
           <h2 class="title is-2">
             <a href="/blog/{{ $p->slug }}">
