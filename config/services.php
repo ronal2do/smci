@@ -35,16 +35,16 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'facebook' => [
-        'client_id' => '1601517086754436',
-        'client_secret' => 'bdd729cbba84376cf0cd08cdfa90be14',
-        'redirect' => 'http://localhost:8000/callback',
-    ],
-
     // 'facebook' => [
-    //     'client_id' => '439578256137914',
-    //     'client_secret' => '6cd9106829b0df302c99ff7fe4e220d5',
-    //     'redirect' => 'http://www.smci.com.br/callback',
+    //     'client_id' => '1601517086754436',
+    //     'client_secret' => 'bdd729cbba84376cf0cd08cdfa90be14',
+    //     'redirect' => 'http://localhost:8000/callback',
     // ],
+
+    'facebook' => [
+        'client_id' => '439578256137914',
+        'client_secret' => '6cd9106829b0df302c99ff7fe4e220d5',
+        'redirect' => 'http://www.smci.com.br/callback',
+    ],
 
 ];
