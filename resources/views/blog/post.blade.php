@@ -97,7 +97,9 @@
             <div class="notification share">
                   
                     <a class="button is-primary"><i class="fa fa-facebook"></i> </a>  
-                    <a class="button is-primary"><i class="fa fa-twitter"></i> </a> 
+                    <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fsupport.twitter.com%2Farticles%2F332912&ref_src=twsrc%5Etfw&text={{ $p->titulo }}&tw_p=tweetbutton&url=http%3A%2F%2Fwww.smci.com.br/blog/{{ $p->slug }}" 
+                      class="button is-primary"
+                      target="_blank"><i class="fa fa-twitter"></i> </a> 
                     <a class="button is-primary"><i class="fa fa-google-plus"></i> </a> 
             </div>
         </div>

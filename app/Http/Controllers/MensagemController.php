@@ -17,7 +17,7 @@ class MensagemController extends Controller
         $dadosForm = $request->all();
         $mensagem = Mensagem::create($dadosForm);
         // dd($dadosForm);
-        return redirect()->route('home'); 
+        return redirect()->route('home/#contato'); 
     }
 
     public function newsletter(Request $request)

@@ -34,11 +34,7 @@
                 <span class="titulo-mobilidade">pela mobilidade saudável e eficiente</span>
             </div>
           </div>
-
-         
-
-
-       
+   
         </h1>
         <div class="column" style="display: block;font-size: 1em;">
               <h1 class="title">
@@ -83,11 +79,20 @@
               </nav>
 
          <div class="texto-tamanho">
-            <h4 class="subtitle is-4">O desafio foi lançado</h4>
-            <h4 class="subtitle is-4">O I Seminário Metropolitano Cidades Inteligentes – Juntos pela mobilidade sustentável e segura vai promover dois dias de palestras e debates sobre mobilidade urbana.
+            <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos pela mobilidade sustentável e segura” é um evento de caráter técnico e institucional sobre mobilidade e saúde.</h4>
+            <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, modais não motorizados, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
             </h4>
             
-            <h4 class="subtitle is-4">Serão discursões que visarão estabelecer objetivos para atingir as metas estabelecidas pela ONU sobre a redução pela metade as mortes e lesões em acidentes de trânsito até 2020.
+            <h4 class="subtitle is-4"> O Seminário busca, fundamentalmente, estabelecer objetivos adequados à realidade da Região Metropolitana de São Paulo, capazes de efetivamente contribuir para o alcance das metas estabelecidas pela ONU que visam à redução de acidentes com vítimas fatais.
+            </h4>
+
+            <h4 class="subtitle is-4">O propósito é envolver os diversos setores da sociedade no compromisso em trilhar caminhos mais sustentáveis, seguros e adequados dentro da perspectiva de reversão do panorama atual. 
+            </h4>
+
+            <h4 class="subtitle is-4">O desafio está lançado. 
+            </h4>
+
+            <h4 class="subtitle is-4">Venha fazer parte desse movimento por mobilidade sustentável e segura.  <br>Esperamos por você.
             </h4>
          </div>
             <br><br>  
@@ -179,7 +184,6 @@
                         </div>
                       </nav></h3>
                        Revelar experiências bem-sucedidas na priorização do transporte público e no incentivo ao uso do transporte não motorizado, como a bicicleta. Como garantir a segurança do pedestre e de cidadãos com deficiência de locomoção (cadeirantes, deficientes visuais).
-                       
                     </div>
                   </div>
           </div>  
@@ -200,7 +204,6 @@
                           <a class="navbar-item cont">
                             <span class="icon is-small" style="color:#124412;"><i class="fa fa-low-vision"></i></span>
                           </a>
-                           
                         </div>
                       </nav></h3>
                           Incorporar iniciativas nos programas de governo e nas políticas públicas municipais de mobilidade urbana e de saúde pública que atendam às definições estabelecidas pela ONU para toda a Região Metropolitana de São Paulo.

@@ -14,7 +14,7 @@
                             <i class="icon fa fa-user fa-4x"></i>
                             <div class="content">
                                 <div class="title">{{ $userct }}</div>
-                                <div class="sub-title">Usuários</div>
+                                <div class="sub-title">Ver Usuários</div>
                             </div>
                             <div class="clear-both"></div>
                         </div>
@@ -22,13 +22,13 @@
                 </a>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                <a href="#">
+                <a href="/home/posts/criar">
                     <div class="card yellow summary-inline">
                         <div class="card-body">
-                            <i class="icon fa fa-comments fa-4x"></i>
+                            <i class="icon fa fa-pencil-square-o fa-4x"></i>
                             <div class="content">
-                                <div class="title">{{ $mensagens->count() }}</div>
-                                <div class="sub-title">Mensagens</div>
+                                <div class="title">{{ $posts->count() }}</div>
+                                <div class="sub-title">Escrever</div>
                             </div>
                             <div class="clear-both"></div>
                         </div>
