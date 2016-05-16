@@ -59,7 +59,7 @@
      <section class="section is-medium">
       <div class="container">
         <p class="subtitle is-4">
-          Dia XX e XX de Julho
+          Dia 28 e 29 de Julho
         </p>
         <h2 class="title is-2">
           <a href="">

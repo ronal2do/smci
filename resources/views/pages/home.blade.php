@@ -284,7 +284,7 @@
                   <th width="200px">Palestrante</th>
                 </tr>
               </tfoot>
-              <tbody>
+<tbody>
                 <tr>
                   <td class="is-link">
                     <a href="#">08h às 09h</a>
@@ -308,27 +308,19 @@
                    
                   </td>
                 </tr>
+                
                 <tr>
                   <td class="is-link">
-                    <a href="#">10h30 às 11h00</a>
-                  </td>
-                  <td>
-                  <strong>Palestra</strong><br>
-                   <strong>Tema:</strong> A política de mobilidade urbana: contextualização das mudanças nas últimas 3 décadas.
-                  </td>
-                  <td class="is-link is-icon">
-                    <a href="#">
-                     Nazareno Stanislau Affonso
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">11h00 às 12h30</a>
+                    <a href="#">10h30 às 12h30</a>
                   </td>
                   <td><strong>Dinâmica</strong><br>
-                   <strong>Tema:</strong> A política de mobilidade urbana: postura, comportamento… Trabalho de interação com os participantes do seminário para impacto da importância das políticas públicas na redução dos acidentes e o comportamento do ser humano em relação a essas políticas públicas (reações, rejeições….)
-                  </td>
+                   <strong>Tema:</strong> O sociodrama irá provocar e sensibilizar os participantes, criando um tom de experiência
+
+e experimentação. O sociodrama e suas reflexões serão inspirados nos depoimentos da
+
+população paulistana descritos no livro “Saúde e subjetividade na mobilidade urbana:
+
+experiência cartográfica de uma cidade (im)possível”.</td>
                   <td class="is-link is-icon">
                     <a href="#">
                       Marisa Greeb <br> Priscila Tamis
@@ -340,8 +332,7 @@
                     <a href="#">12h30 às 14h00</a>
                   </td>
                   <td>
-                    <strong>Almoço</strong>
-                  </td>
+                    <strong>Almoço </strong> <small>*Almoço servido no local do evento</small></td>
                   <td class="is-link is-icon">
                     <a href="#">
                       
@@ -352,13 +343,16 @@
                   <td class="is-link">
                     <a href="#">14h às 14h30</a>
                   </td>
-                  <td><strong>Apresentação dos vídeos da Mostra</strong>             
+                  <td><strong>Palestra</strong><br>
+<strong>Tema: </strong> A política de mobilidade urbana: contextualização das mudanças nas últimas 3 décadas.             
                   </td>
                   <td class="is-link is-icon">
+                   <a href="#">Nazareno Stanislau Affonso</a>
                    
                   </td>
                 </tr>
-                <tr>
+                
+<tr>
                   <td class="is-link">
                     <a href="#">14h30 às 17h00</a>
                   </td>
@@ -372,6 +366,15 @@
                     França <br>
                     Colômbia  
                   </td>
+                </tr><tr>
+                  <td class="is-link">
+                    <a href="#">17h00 às 17h10</a>
+                  </td>
+                  <td>
+                   <strong>Apresentação do vídeo da Mostra</strong>
+                   
+                   </td>
+                  <td class="is-link is-icon"><br></td>
                 </tr>
               </tbody>
             </table>
@@ -405,32 +408,33 @@
                     
                   </td>
                 </tr>
+
                 <tr>
                   <td class="is-link">
-                    <a href="#">09h às 09h15</a>
-                  </td>
-                  <td>
-                    Apresentação dos vídeos da Mostra (2 lugares de cada categoria)
-                  </td>
-                  <td class="is-link is-icon">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">09h15 às 12h</a>
+                    <a href="#">09h às 12h</a>
                   </td>
                   <td>
                   <strong>Mesa Redonda</strong><br>
-                  <strong>Tema:</strong> A Construção de uma agenda coletiva da mobilidade urbana para região metropolitana de São Paulo.<br>
-                 <strong>Representante das 6 regiões metropolitanas</strong><br>Capital, Guarulhos, Francisco Morato, Osasco, Taboão da Serra e ABC  e representante do Fórum Paulista e Cosems.
+                  <strong>Tema:</strong> A construção de uma agenda coletiva da mobilidade urbana para a Região Metropolitana de São Paulo.<br>
+                 <strong>Representantes da Região Metropolitana de São Paulo – Capital,</strong><br>Guarulhos, Francisco Morato, Osasco, Taboão da Serra e ABC, um representante do Fórum Paulista e um representante do COSEMS.
                   </td>
                   <td class="is-link is-icon">
                     <a href="#">
                      Vicente Trevas
                     </a>
                   </td>
-                </tr>
+                </tr>                
                 <tr>
+                  <td class="is-link">
+                    <a href="#">12h às 12h10</a>
+                  </td>
+                  <td>
+                    <strong>Apresentação dos vídeos da Mostra</strong>
+                  </td>
+                  <td class="is-link is-icon">
+                  </td>
+                </tr>
+               <!--  <tr>
                   <td class="is-link">
                     <a href="#">12h</a>
                   </td>
@@ -441,7 +445,7 @@
                     <a href="#">
                     </a>
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
