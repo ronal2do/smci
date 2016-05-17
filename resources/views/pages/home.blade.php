@@ -39,8 +39,7 @@
         <div class="column" style="display: block;font-size: 1em;">
               <h1 class="title">
                 <div class="is-success is-text-center">
-                  <span id="semanas" class="borda"></span>
-                  <span id="dias" class="borda"></span>              
+                  <span id="dias" class="borda">Dia 28 e 29 de Julho</span>              
                   <span id="horas" class="borda"></span>
                   <span id="minutos" class="borda is-hidden-touch"></span>
                   <span id="segundos" class="borda is-hidden-touch"></span>

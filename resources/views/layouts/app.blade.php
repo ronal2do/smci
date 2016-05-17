@@ -10,7 +10,9 @@
     <title>Seminário Municipal Cidades Inteligentes</title>
   </head>
 <body>
-
+<style>
+  
+</style>
 @yield('content')
 <!-- /Contato -->
 @include('includes.newsletter')
