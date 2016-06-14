@@ -31,7 +31,7 @@
                 <br class="is-hidden-touch">
                 <span class="titulo-seminario">I Seminário Metropolitano Cidades Inteligentes</span><br>
                 <span class="titulo-juntos"> JUNTOS </span><br>
-                <span class="titulo-mobilidade">pela mobilidade saudável e eficiente</span>
+                <span class="titulo-mobilidade">Pela mobilidade sustentável e segura</span>
             </div>
           </div>
    
