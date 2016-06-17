@@ -76,6 +76,16 @@
                                          <i class="fa fa-check icon"></i> Postagem
                                      </li>
                                  </a>
+                                  <a href="/home/palestrantes/criar">
+                                        <li class="list-group-item">
+                                         <i class="fa fa-check icon"></i> palestrantes
+                                     </li>
+                                 </a>
+                                   <a href="/home/palestras/criar">
+                                        <li class="list-group-item">
+                                         <i class="fa fa-check icon"></i> palestras
+                                     </li>
+                                 </a>
                                  <a href="/home/video">
                                     <li class="list-group-item">
                                         <i class="fa fa-play icon"></i> Vídeo

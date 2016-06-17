@@ -12,7 +12,10 @@
 */
 
 Route::get('/',['as'=>'home' ,function () {
-	return view('pages.home');
+	$palestrantes = \App\Palestrante::get();
+	$palestras = \App\Palestra::orderBy('horario')->get();
+
+	return view('pages.home', compact('palestrantes', 'palestras'));
 }]);
 
 Route::get('/privacidade',function () {
@@ -41,6 +44,15 @@ Route::group(['prefix' => '/home'], function () {
 	Route::post('/posts/criar', ['uses'=>'PostsController@store', 'as'=> 'posts.store']);
 	Route::get('/post/{slug}/delete', 'PostsController@destroy');
 
+	Route::get('/palestrantes', ['uses'=>'PalestranteController@index', 'as'=> 'palestrantes']);
+	Route::get('/palestrantes/criar', ['uses'=>'PalestranteController@create', 'as'=> 'palestrantes.criar']);
+	Route::post('/palestrantes/criar', ['uses'=>'PalestranteController@store', 'as'=> 'palestrantes.store']);
+	Route::get('/palestrante/{slug}/delete', 'PalestranteController@destroy');
+
+	Route::get('/palestras', ['uses'=>'PalestraController@index', 'as'=> 'palestras']);
+	Route::get('/palestras/criar', ['uses'=>'PalestraController@create', 'as'=> 'palestras.criar']);
+	Route::post('/palestras/criar', ['uses'=>'PalestraController@store', 'as'=> 'palestras.store']);
+	Route::get('/palestra/{slug}/delete', 'PalestraController@destroy');
 
 	Route::get('/categorias', ['uses'=>'CategoriasController@index', 'as'=> 'categorias']);
 	Route::get('/categorias/criar', ['uses'=>'CategoriasController@create', 'as'=> 'categorias.criar']);

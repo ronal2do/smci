@@ -7,7 +7,7 @@
 <div class="container-fluid">
     <div class="side-body padding-top">
         <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="/home/usuarios">
                     <div class="card red summary-inline">
                         <div class="card-body">
@@ -21,7 +21,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="/home/posts/criar">
                     <div class="card yellow summary-inline">
                         <div class="card-body">
@@ -35,7 +35,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="/home/posts">
                     <div class="card green summary-inline">
                         <div class="card-body">
@@ -49,7 +49,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="/home/inscritos">
                     <div class="card blue summary-inline">
                         <div class="card-body">
@@ -63,7 +63,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="/home/categorias">
                     <div class="card purple summary-inline">
                         <div class="card-body">
@@ -77,7 +77,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <a href="#">
                     <div class="card white summary-inline">
                         <div class="card-body">
@@ -85,6 +85,34 @@
                             <div class="content">
                                 <div class="title">{{ $vidct }}</div>
                                 <div class="sub-title">Vídeos</div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="/home/palestrantes">
+                    <div class="card purple summary-inline">
+                        <div class="card-body">
+                            <i class="icon fa fa-play fa-4x"></i>
+                            <div class="content">
+                                <div class="title">{{ $palestrantect }}</div>
+                                <div class="sub-title">Palestrantes</div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="/home/palestras">
+                    <div class="card green summary-inline">
+                        <div class="card-body">
+                            <i class="icon fa fa-play fa-4x"></i>
+                            <div class="content">
+                                <div class="title">{{ $palestract }}</div>
+                                <div class="sub-title">Palestras</div>
                             </div>
                             <div class="clear-both"></div>
                         </div>

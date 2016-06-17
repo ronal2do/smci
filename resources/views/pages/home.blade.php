@@ -60,10 +60,8 @@
           </h3>
               <nav class="navbar">
                   <div class="navbar-left">
-                  <audio id="player" src="frontend/audio/desafio.m4a"></audio>
-                    <a class="navbar-item" onclick="document.getElementById('player').play()">
-                      <span class="icon is-icon"><i class="fa fa-audio-description"></i></span>
-                    </a>
+
+                    
                    <a class="navbar-item minus">
                     <span class="icon is-small"><i class="fa fa-font">-</i></span>
                   </a>
@@ -110,9 +108,7 @@
             </h3>
             <nav class="navbar">
                 <div class="navbar-left">
-                  <a class="navbar-item">
-                    <span class="icon is-icon" style="color:#fff;"><i class="fa fa-audio-description"></i></span>
-                  </a>
+                 
                   <a class="navbar-item minus">
                     <span class="icon is-small" style="color:#fff;"><i class="fa fa-font">-</i></span>
                   </a>
@@ -139,9 +135,7 @@
                     <div class="box is-success is-text-left">
                         <h3> <nav class="navbar">
                         <div class="navbar-left">
-                          <a class="navbar-item">
-                            <span class="icon is-icon" style="color:#124412;"><i class="fa fa-audio-description"></i></span>
-                          </a>
+                         
                           <a class="navbar-item minus">
                             <span class="icon is-small" style="color:#124412;"><i class="fa fa-font">-</i></span>
                           </a>
@@ -167,9 +161,7 @@
                     <div class="box is-success is-text-left">
                       <h3><nav class="navbar">
                         <div class="navbar-left">
-                          <a class="navbar-item">
-                            <span class="icon is-icon" style="color:#124412;"><i class="fa fa-audio-description"></i></span>
-                          </a>
+                         
                           <a class="navbar-item minus">
                             <span class="icon is-small" style="color:#124412;"><i class="fa fa-font">-</i></span>
                           </a>
@@ -191,9 +183,7 @@
                     <div class="box is-success is-text-left">
                         <h3><nav class="navbar">
                         <div class="navbar-left">
-                          <a class="navbar-item">
-                            <span class="icon is-icon" style="color:#124412;"><i class="fa fa-audio-description"></i></span>
-                          </a>
+                         
                           <a class="navbar-item minus">
                             <span class="icon is-small" style="color:#124412;"><i class="fa fa-font">-</i></span>
                           </a>
@@ -217,9 +207,7 @@
                     <div class="box is-success is-text-left">
                       <h3><nav class="navbar">
                         <div class="navbar-left">
-                          <a class="navbar-item">
-                            <span class="icon is-icon" style="color:#124412;"><i class="fa fa-audio-description"></i></span>
-                          </a>
+                         
                           <a class="navbar-item minus">
                             <span class="icon is-small" style="color:#124412;"><i class="fa fa-font">-</i></span>
                           </a>
@@ -250,10 +238,7 @@
           </h3>
           <nav class="navbar">
               <div class="navbar-left">
-              <audio id="player" src="frontend/audio/desafio.m4a"></audio>
-                <a class="navbar-item" onclick="document.getElementById('player').play()">
-                  <span class="icon is-icon"><i class="fa fa-audio-description"></i></span>
-                </a>
+               
                <a class="navbar-item minus">
                 <span class="icon is-small"><i class="fa fa-font">-</i></span>
               </a>
@@ -283,98 +268,23 @@
                   <th width="200px">Palestrante</th>
                 </tr>
               </tfoot>
-<tbody>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">08h às 09h</a>
-                  </td>
-                  <td>
-                    Credenciamento e Welcome Coffee
-                  </td>
-                  <td class="is-link is-icon">
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">09h às 10h30</a>
-                  </td>
-                  <td>
-                    <strong>Abertura</strong>
-                   
-                  </td>
-                  <td class="is-link is-icon">
-                   
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td class="is-link">
-                    <a href="#">10h30 às 12h30</a>
-                  </td>
-                  <td><strong>Dinâmica</strong><br>
-                   <strong>Tema:</strong> O sociodrama irá provocar e sensibilizar os participantes, criando um tom de experiência
-
-e experimentação. O sociodrama e suas reflexões serão inspirados nos depoimentos da
-
-população paulistana descritos no livro “Saúde e subjetividade na mobilidade urbana:
-
-experiência cartográfica de uma cidade (im)possível”.</td>
-                  <td class="is-link is-icon">
-                    <a href="#">
-                      Marisa Greeb <br> Priscila Tamis
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">12h30 às 14h00</a>
-                  </td>
-                  <td>
-                    <strong>Almoço </strong> <small>*Almoço servido no local do evento</small></td>
-                  <td class="is-link is-icon">
-                    <a href="#">
-                      
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">14h às 14h30</a>
-                  </td>
-                  <td><strong>Palestra</strong><br>
-<strong>Tema: </strong> A política de mobilidade urbana: contextualização das mudanças nas últimas 3 décadas.             
-                  </td>
-                  <td class="is-link is-icon">
-                   <a href="#">Nazareno Stanislau Affonso</a>
-                   
-                  </td>
-                </tr>
-                
-<tr>
-                  <td class="is-link">
-                    <a href="#">14h30 às 17h00</a>
-                  </td>
-                  <td>
-                   <strong>Debate</strong><br>
-                   <strong>Tema:</strong> Experiências Internacionais: mobilidade urbana e saúde<br>
-                   <strong>Moderador</strong>: Heródoto Barbeiro
-                  </td>
-                  <td class="is-link is-icon">
-                    Estados Unidos  <br>
-                    França <br>
-                    Colômbia  
-                  </td>
-                </tr><tr>
-                  <td class="is-link">
-                    <a href="#">17h00 às 17h10</a>
-                  </td>
-                  <td>
-                   <strong>Apresentação do vídeo da Mostra</strong>
-                   
-                   </td>
-                  <td class="is-link is-icon"><br></td>
-                </tr>
+              <tbody>
+                @foreach($palestras as $p)
+                  @if ($p->dia == 1)
+                      <tr>
+                        <td class="is-link">
+                          <a href="#">{{$p->horario}}</a>
+                        </td>
+                        <td>
+                         {!!$p->palestra!!}
+                        </td>
+                        <td class="is-link is-icon">
+                          {!!$p->mediador!!}
+                        </td>
+                      </tr>
+                  @endif
+               @endforeach
+               
               </tbody>
             </table>
           </div>
@@ -396,55 +306,21 @@ experiência cartográfica de uma cidade (im)possível”.</td>
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <td class="is-link">
-                    <a href="#">08h às 09h</a>
-                  </td>
-                  <td>
-                    Credenciamento e Welcome Coffee
-                  </td>
-                  <td class="is-link is-icon">
-                    
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="is-link">
-                    <a href="#">09h às 12h</a>
-                  </td>
-                  <td>
-                  <strong>Mesa Redonda</strong><br>
-                  <strong>Tema:</strong> A construção de uma agenda coletiva da mobilidade urbana para a Região Metropolitana de São Paulo.<br>
-                 <strong>Representantes da Região Metropolitana de São Paulo – Capital,</strong><br>Guarulhos, Francisco Morato, Osasco, Taboão da Serra e ABC, um representante do Fórum Paulista e um representante do COSEMS.
-                  </td>
-                  <td class="is-link is-icon">
-                    <a href="#">
-                     Vicente Trevas
-                    </a>
-                  </td>
-                </tr>                
-                <tr>
-                  <td class="is-link">
-                    <a href="#">12h às 12h10</a>
-                  </td>
-                  <td>
-                    <strong>Apresentação dos vídeos da Mostra</strong>
-                  </td>
-                  <td class="is-link is-icon">
-                  </td>
-                </tr>
-               <!--  <tr>
-                  <td class="is-link">
-                    <a href="#">12h</a>
-                  </td>
-                  <td><strong> Recepção com os Patrocinadores</strong>
-                 
-                  </td>
-                  <td class="is-link is-icon">
-                    <a href="#">
-                    </a>
-                  </td>
-                </tr> -->
+               @foreach($palestras as $p)
+                      @if ($p->dia == 2)
+                          <tr>
+                            <td class="is-link">
+                              <a href="#">{{$p->horario}}</a>
+                            </td>
+                            <td>
+                             {!!$p->palestra!!}
+                            </td>
+                            <td class="is-link is-icon">
+                              {!!$p->mediador!!}
+                            </td>
+                          </tr>
+                      @endif
+                   @endforeach
               </tbody>
             </table>
           </div>
@@ -463,10 +339,7 @@ experiência cartográfica de uma cidade (im)possível”.</td>
             </h3>
          <nav class="navbar">
               <div class="navbar-left">
-              <audio id="player" src="frontend/audio/desafio.m4a"></audio>
-                <a class="navbar-item" onclick="document.getElementById('player').play()">
-                  <span class="icon is-icon" style="color:#fff;"><i class="fa fa-audio-description"></i></span>
-                </a>
+             
                <a class="navbar-item minus">
                 <span class="icon is-small" style="color:#fff;"><i class="fa fa-font">-</i></span>
               </a>
@@ -483,171 +356,25 @@ experiência cartográfica de uma cidade (im)possível”.</td>
            
         <div class="columns is-vcentered">
           <div class="column is-text-left">
-            
-              <div class="box">
-                        <article class="media">
-                          <div class="media-left">
-                            <figure class="image is-128x128">
-                              <img src="http://lorempixel.com/128/128/people/3" alt="Image">
-                            </figure>
+         
+            @foreach ($palestrantes as $p)
+              @if ($p->id % 2 == 0)
+              @include('includes.profile')
+             @else
+             @endif 
+           @endforeach
 
-                          </div>
-                          <div class="media-content">
-                            <div class="content">
-                              <p>
-                                <strong>Mme. Muriel Dubreuil</strong> <small>@johnsmith</small>
-                                <br>
-                               Atualmente trabalha para o “Île-de-France Region, Observatório de Saúde” (ORS), um departamento autônomo do IAU (Instituto de Planejamento e Desenvolvimento Urbano).
-                              </p>
-                            </div>
-                          <nav class="navbar">
-                          <div class="navbar-left">
-                            <a class="navbar-item modal-button" data-target="#modalMme">
-                              <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                  </a>
-
-                          </div>
-                        </nav>
-                          </div>
-
-                        </article>
-              </div>
-          
-              <div class="box">
-                  <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-128x128">
-                      <img src="http://lorempixel.com/128/128/people/6" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Mrs. Porie Saikia-Eapen</strong> <small>@johnsmith</small>
-                        <br>
-                       Trabalha na sede do Departamento de Sustentabilidade e Comprometimento Ambiental na MTA (Metropolitan Transportation Authority), companhia responsável pelo transporte público no estado de Nova Iorque.
-                      </p>
-                    </div>
-                  <nav class="navbar">
-                  <div class="navbar-left">
-                    <a class="navbar-item modal-button" data-target="#modalPorie">
-                      <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                    </a>
-                  </div>
-                    </nav>
-                  </div>
-                  </article>
-              </div>
-            
-              <div class="box">
-                  <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-128x128">
-                      <img src="http://lorempixel.com/128/128/people/2" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Professor Heródoto Barbeiro</strong> <small>Mediador</small> 
-                        <br>
-                       Formado em História pela Universidade de São Paulo, onde também cursou, além da licenciatura, pós-graduação e mestrado. 
-                      </p>
-                    </div>
-                  <nav class="navbar">
-                  <div class="navbar-left">
-                     <a class="navbar-item">
-                    <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                  </a>
-
-                  </div>
-                    </nav>
-                  </div>
-                  </article>
-              </div> 
             <br>
+
           </div>
 
           <div class="column">
-            <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="http://lorempixel.com/128/128/people/1" alt="Image">
-                  </figure>
-
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong> <small>@johnsmith</small> 
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                    </p>
-                  </div>
-                <nav class="navbar">
-                <div class="navbar-left">
-                   <a class="navbar-item">
-                    <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                  </a
-                </div>
-              </nav>
-                </div>
-
-              </article>
-            </div>
-          
-            <div class="box">
-                <article class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="http://lorempixel.com/128/128/people/6" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong> <small>@johnsmith</small> 
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                    </p>
-                  </div>
-                <nav class="navbar">
-                <div class="navbar-left">
-                   <a class="navbar-item">
-                    <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                  </a>
-                </div>
-                  </nav>
-                </div>
-                </article>
-            </div>
-          
-            <div class="box">
-                <article class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="http://lorempixel.com/128/128/people/6" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong> <small>@johnsmith</small> 
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis.
-                    </p>
-                  </div>
-                <nav class="navbar">
-                <div class="navbar-left">
-                   <a class="navbar-item">
-                    <span class="icon is-small"><i class="fa fa-eye"></i></span>
-                  </a>
-                </div>
-                  </nav>
-                </div>
-                </article>
-            </div> 
+           @foreach ($palestrantes as $p)
+              @if ($p->id % 2 !== 0)
+                @include('includes.profile')
+              @else
+             @endif 
+           @endforeach      
                <br>  
           </div>
 
@@ -667,10 +394,7 @@ experiência cartográfica de uma cidade (im)possível”.</td>
         </h3>
          <nav class="navbar">
                   <div class="navbar-left">
-                  <audio id="player" src="frontend/audio/desafio.m4a"></audio>
-                    <a class="navbar-item" onclick="document.getElementById('player').play()">
-                      <span class="icon is-icon"><i class="fa fa-audio-description"></i></span>
-                    </a>
+               
                    <a class="navbar-item minus">
                     <span class="icon is-small"><i class="fa fa-font">-</i></span>
                   </a>
@@ -706,9 +430,7 @@ experiência cartográfica de uma cidade (im)possível”.</td>
         </h3>
             <nav class="navbar">
                 <div class="navbar-left">
-                  <a class="navbar-item">
-                    <span class="icon is-icon" style="color:#fff;"><i class="fa fa-audio-description"></i></span>
-                  </a>
+                 
                   <a class="navbar-item minus">
                     <span class="icon is-small" style="color:#fff;"><i class="fa fa-font">-</i></span>
                   </a>

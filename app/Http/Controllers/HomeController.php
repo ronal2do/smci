@@ -12,6 +12,8 @@ use App\Mensagem;
 use App\Newsletter;
 use App\Post;
 use App\Categoria;
+use App\Palestra;
+use App\Palestrante;
 
 class HomeController extends Controller
 {
@@ -41,10 +43,12 @@ class HomeController extends Controller
         $userct = User::count();
         $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
         $posts = Post::orderBy('id', 'desc')->get();
+        $palestract = Palestra::count();
+        $palestrantect = Palestrante::count();
         
         $newsletters = Newsletter::orderBy('id', 'desc')->take(4)->get();
 
-        return view('painel.home', compact('video', 'videos','categorias', 'vidct', 'userct', 'mensagens' , 'newsletters', 'posts'));
+        return view('painel.home', compact('video', 'videos','categorias', 'vidct', 'userct', 'mensagens' , 'newsletters', 'posts', 'palestract', 'palestrantect'));
     }
 
     public function video($slug)
