@@ -12,13 +12,13 @@ class AlterPalestrasTable extends Migration
      */
     public function up()
     {
-       Schema::table('palestras', function (Blueprint $table) {
-            $table->longText('palestra');
-            $table->longText('mediador');
-        });
-       Schema::table('palestrantes', function (Blueprint $table) {
-            $table->longText('resume');
-        });
+       // Schema::table('palestras', function (Blueprint $table) {
+       //      $table->longText('palestra');
+       //      $table->longText('mediador');
+       //  });
+       // Schema::table('palestrantes', function (Blueprint $table) {
+       //      $table->longText('resume');
+       //  });
     }
 
     /**
