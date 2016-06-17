@@ -251,7 +251,7 @@
                  
               </div>
           </nav>
-          Dia 1 - 09/06
+          Dia 1 - 28/07
           <div class="example">
             <table class="table is-bordered is-striped">
               <thead>
@@ -288,7 +288,7 @@
               </tbody>
             </table>
           </div>
-          Dia 2 - 10/06
+          Dia 2 - 29/07
           <div class="example">
             <table class="table is-bordered is-striped">
               <thead>
