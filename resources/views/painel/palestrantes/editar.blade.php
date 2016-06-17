@@ -25,7 +25,7 @@
                   
                         <div>
                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder'=> 'Título']) !!}
-                            <input type="text" class="form-control" name="name" placeholder="Título">
+                          
                         </div>
                        
                         <div class="sub-title">Curriculo</div>
