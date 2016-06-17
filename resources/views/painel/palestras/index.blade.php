@@ -11,7 +11,7 @@
                 <div class="card-header">
 
                     <div class="card-title">
-                        <div class="title">Palestrantes</div>
+                        <div class="title">Palestra</div>
                     </div>
                 </div>
                 <div class="card-body">
@@ -41,7 +41,7 @@
                                 <td>{{ $p->horario }}</td>
                                 <td>{!! $p->mediador !!}</td>
                                 <td>{!! str_limit($p->palestra, $limit = 95, $end = ' ... ') !!}</td>
-                                <td><strong><a href="/home/palestra/{{$p->slug}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong></td>
+                                <td><strong><a href="/home/palestra/{{$p->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong><br><strong><a href="/home/palestra/{{$p->id}}/edit"><i class="fa fa-pencil"></i> Editar</a></strong></td>
                             </tr>
                             @endforeach
                         </tbody>

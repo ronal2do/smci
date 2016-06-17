@@ -47,12 +47,17 @@ Route::group(['prefix' => '/home'], function () {
 	Route::get('/palestrantes', ['uses'=>'PalestranteController@index', 'as'=> 'palestrantes']);
 	Route::get('/palestrantes/criar', ['uses'=>'PalestranteController@create', 'as'=> 'palestrantes.criar']);
 	Route::post('/palestrantes/criar', ['uses'=>'PalestranteController@store', 'as'=> 'palestrantes.store']);
+	Route::get('/palestrante/{id}/edit', ['uses'=>'PalestranteController@edit', 'as'=> 'palestrantes.edit']);
+	Route::PATCH('/palestrante/{id}/edit', ['uses'=>'PalestranteController@update', 'as'=> 'palestrantes.update']);
 	Route::get('/palestrante/{slug}/delete', 'PalestranteController@destroy');
 
 	Route::get('/palestras', ['uses'=>'PalestraController@index', 'as'=> 'palestras']);
 	Route::get('/palestras/criar', ['uses'=>'PalestraController@create', 'as'=> 'palestras.criar']);
 	Route::post('/palestras/criar', ['uses'=>'PalestraController@store', 'as'=> 'palestras.store']);
-	Route::get('/palestra/{slug}/delete', 'PalestraController@destroy');
+	Route::get('/palestra/{id}', ['uses'=>'PalestraController@show', 'as'=> 'palestras.show']);
+	Route::get('/palestra/{id}/edit', ['uses'=>'PalestraController@edit', 'as'=> 'palestras.edit']);
+	Route::PATCH('/palestra/{id}/edit', ['uses'=>'PalestraController@update', 'as'=> 'palestras.update']);
+	Route::get('/palestra/{id}/delete', 'PalestraController@destroy');
 
 	Route::get('/categorias', ['uses'=>'CategoriasController@index', 'as'=> 'categorias']);
 	Route::get('/categorias/criar', ['uses'=>'CategoriasController@create', 'as'=> 'categorias.criar']);

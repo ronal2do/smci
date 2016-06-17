@@ -46,6 +46,6 @@
         {
             $('#redactor_content').redactor();
         }
-        );
-    </script>
-    @endsection                                 
+    );
+</script>
+@endsection                                 

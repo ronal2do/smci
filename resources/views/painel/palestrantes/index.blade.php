@@ -35,7 +35,7 @@
                             <tr>
                                 <td>{{ $p->name }}</td>
                                 <td>{!! str_limit($p->resume, $limit = 95, $end = ' ... ') !!}</td>
-                                <td><strong><a href="/home/post/{{$p->slug}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong></td>
+                                 <td><strong><a href="/home/palestrante/{{$p->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong><br><strong><a href="/home/palestrante/{{$p->id}}/edit"><i class="fa fa-pencil"></i> Editar</a></strong></td>
                             </tr>
                             @endforeach
                         </tbody>

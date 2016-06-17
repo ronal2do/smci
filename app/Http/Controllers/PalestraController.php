@@ -34,11 +34,27 @@ class PalestraController extends Controller
 
         return view('painel.palestras.index', compact('palestras'));
     }
-    public function show($slug)
+    public function show($id)
     {
-        $p = Palestra::findBySlug($slug);
-     
+        $p = Palestra::find($id);
+     dd($p);
         return view('painel.palestras.single', compact('p'));        
+    }
+    public function edit($id)
+    {
+        $p = Palestra::find($id);
+        // dd($p);
+        return view('painel.palestras.editar', compact('p'));        
+    }
+    public function update($id, Request $request)
+    {
+        $p = Palestra::findOrFail($id);
+
+        $dadosForm = $request->all();
+
+        $p->fill($dadosForm)->save();
+   
+        return redirect()->route('palestras');       
     }
     public function create()
     {   
@@ -50,13 +66,13 @@ class PalestraController extends Controller
         $dadosForm = $request->all();
         $palestrante = Palestra::create($dadosForm);
         // dd($dadosForm);
-        return redirect()->route('painel.home');       
+        return redirect()->route('palestras');      
     }
-    public function destroy($slug)
+    public function destroy($id)
     {
-        $p = Palestra::findBySlug($slug);
+        $p = Palestra::find($id);
         $p->delete();
 
-        return redirect()->route('painel.home');         
+        return redirect()->route('palestras');         
     }
 }

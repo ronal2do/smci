@@ -52,11 +52,29 @@ class PalestranteController extends Controller
         // dd($dadosForm);
         return redirect()->route('painel.home');       
     }
-    public function destroy($slug)
+    public function destroy($id)
     {
-        $p = Palestrante::findBySlug($slug);
+        $p = Palestrante::findOrFail($id);
         $p->delete();
 
         return redirect()->route('painel.home');         
+    }
+
+    public function edit($id)
+    {
+        $p = Palestrante::find($id);
+        // dd($p);
+        return view('painel.palestrantes.editar', compact('p'));        
+    }
+    
+    public function update($id, Request $request)
+    {
+        $p = Palestrante::findOrFail($id);
+
+        $dadosForm = $request->all();
+
+        $p->fill($dadosForm)->save();
+   
+        return redirect()->route('palestrantes');       
     }
 }

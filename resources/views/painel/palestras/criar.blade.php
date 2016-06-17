@@ -22,7 +22,7 @@
                     </div>
                     <div class="sub-title">Dia</div>
                     <div  class="sub-title">
-                        <label for="dia">1<input type="radio" class="form-control" name="dia" value="1"></label>
+                        <label for="dia">1<input type="radio" class="form-control" name="dia" value="1" checked></label>
                         <label for="dia">2<input type="radio" class="form-control" name="dia" value="2"></label>
                     </div>
                     <div class="sub-title">Mediadores</div>
