@@ -13,7 +13,7 @@
 
 Route::get('/',['as'=>'home' ,function () {
 	$palestrantes = \App\Palestrante::get();
-	$palestras = \App\Palestra::orderBy('horario')->get();
+	$palestras = \App\Palestra::get();
 
 	return view('pages.home', compact('palestrantes', 'palestras'));
 }]);

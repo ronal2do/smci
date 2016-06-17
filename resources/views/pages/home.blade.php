@@ -276,10 +276,10 @@
                           <a href="#">{{$p->horario}}</a>
                         </td>
                         <td>
-                         {!!$p->palestra!!}
+                         {!! $p->palestra !!}
                         </td>
                         <td class="is-link is-icon">
-                          {!!$p->mediador!!}
+                          {!! $p->mediador !!}
                         </td>
                       </tr>
                   @endif
@@ -310,13 +310,13 @@
                       @if ($p->dia == 2)
                           <tr>
                             <td class="is-link">
-                              <a href="#">{{$p->horario}}</a>
+                              <a href="#">{{ $p->horario }}</a>
                             </td>
                             <td>
-                             {!!$p->palestra!!}
+                             {!! $p->palestra !!}
                             </td>
                             <td class="is-link is-icon">
-                              {!!$p->mediador!!}
+                              {!! $p->mediador !!}
                             </td>
                           </tr>
                       @endif
