@@ -22,8 +22,8 @@ Route::get('/privacidade',function () {
 	return view('pages.privacidade');
 });
 
-Route::get('/redirect', 'SocialAuthController@redirect');
-Route::get('/callback', 'SocialAuthController@callback');
+Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+Route::get('/callback', 'Auth\AuthController@handleProviderCallback');
 Route::auth();
 
 Route::group(['prefix' => '/home'], function () {

@@ -59,7 +59,7 @@
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} | <img src="http://graph.facebook.com/{{ Auth::user()->social->provider_user_id }}/picture?type=square" alt="">
+                                {{ Auth::user()->name }} | <img src="http://graph.facebook.com/{{ Auth::user()->facebook_id }}/picture?type=square" alt="">
 
                                 <span class="caret"></span>
                             </a>
