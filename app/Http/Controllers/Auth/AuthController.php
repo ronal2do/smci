@@ -78,7 +78,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver('facebook')->redirect('http://smci.com.br/callback');
     }
 
      /**
@@ -90,6 +90,7 @@ class AuthController extends Controller
             Socialite::driver('facebook')->user()
         );
         auth()->login($user);
+
         return redirect('/home');
     }
     /**
@@ -101,7 +102,9 @@ class AuthController extends Controller
     protected function findOrCreateGitHubUser($facebookUser)
     {
         $user = User::firstOrNew(['email' => $facebookUser->email]);
+        
         if ($user->exists) return $user;
+        
         $user->fill([
             'name'        => $facebookUser->name,
             'email'       => $facebookUser->email,
