@@ -18,11 +18,12 @@ class MensagemController extends Controller
 
     public function mensagem(ContatoRequest $request)
     {
-        $dadosForm = $request->all();        
+        $dadosForm = $request->all();
+         $email  = $dadosForm['email'];         
         //dd($dadosForm);
         $mensagem = Mensagem::create($dadosForm);
             
-           $email  = $input['email']; 
+
         Alert::success('Mensagem enviada!')->autoclose(4000);
 
         Mail::send('emails.welcome', [
@@ -40,6 +41,8 @@ class MensagemController extends Controller
     {
         $query = $request->input('email');
         $dadosForm = $request->all();
+        $email  = $dadosForm['email']; 
+        
         $exists = Newsletter::where('email', $query)->first();
 
         if ($exists)
@@ -53,7 +56,7 @@ class MensagemController extends Controller
           $newsletter = Newsletter::create($dadosForm);
         }
 
-           $email  = $input['email']; 
+
         Alert::success('E-mail cadastrado!')->autoclose(4000);
 
         Mail::send('emails.welcome', [
@@ -72,6 +75,7 @@ class MensagemController extends Controller
     {
         $query = $request->input('email');
         $dadosForm = $request->all();
+         $email  = $dadosForm['email']; 
         $exists = Inscrito::where('email', $query)->first();
 
         if ($exists)
@@ -85,7 +89,6 @@ class MensagemController extends Controller
           Inscrito::create($dadosForm);
         }
             
-           $email  = $input['email']; 
         Alert::success('Cadastro efetuado enviada!')->autoclose(4000);
 
         Mail::send('emails.welcome', [
