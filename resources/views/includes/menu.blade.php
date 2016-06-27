@@ -29,6 +29,15 @@
             <a data-target="#modal2" class="modal-button">Assista<span class="numero">[7]</span></a>
           </span> -->
           <span class="header-item">
+         @if( $inscritos->count() < 400)
+          <a class="button is-info is-outlined is-inverted" href="/inscricao">
+          
+          <!--   <span class="icon">
+              <i class="fa fa-commenting-o"></i>
+            </span> -->
+            <span>Inscrição</span>
+          </a>
+          @endif
           <a class="button is-info is-outlined is-inverted" href="/blog">
           <!--   <span class="icon">
               <i class="fa fa-commenting-o"></i>
@@ -41,6 +50,7 @@
             </span> -->
             <span>Assista</span>
           </a>
+
         </span>
 </div>
 

@@ -6,10 +6,10 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
-use App\Newsletter;
+use App\Inscrito;
 use DB;
 
-class NewsletterController extends Controller
+class InscritoController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -31,16 +31,16 @@ class NewsletterController extends Controller
     public function index()
     {
      
-        $users = Newsletter::get();
-        return view('painel.newsletter.index', compact('users'));
+        $users = Inscrito::get();
+        return view('painel.inscritos.index', compact('users'));
     }
 
     public function destroy($id)
     {
-        $n = Newsletter::findOrFail($id);
+        $n = Inscrito::findOrFail($id);
         $n->delete();
 
-        return redirect()->route('news'); 
+        return redirect()->route('inscritos'); 
           
     }
 

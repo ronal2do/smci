@@ -18,22 +18,20 @@
                     <table class="datatable table table-striped" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th>Nome</th>
+                                
                                 <th>Email</th>
-                                <th>Profissão</th>
-                                <th>Como conheceu</th>
                                 <th>Cadastrado</th>
+                                <th>Atualizado</th>
                                 
                                 <th>#</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                              <th>Nome</th>
+                              
                                 <th>Email</th>
-                                <th>Profissão</th>
-                                <th>Como conheceu</th>
                                 <th>Cadastrado</th>
+                                <th>Atualizado</th>
                                 
                                 <th>#</th>
                             </tr>
@@ -42,14 +40,13 @@
                             @foreach ($users as $u)
                             <tr>
                                
-                                <td>{{$u->nome}}</td>
                                 <td>{{$u->email}}</td>
-                                <td>{{$u->profissao}}</td>
-                                <td>{{$u->como}}</td>
-                                <td>{{ $u->updated_at->format('d.m.Y') }}
-                                    {{ $u->updated_at->diffForHumans() }}</td>
+                                <td>{{ $u->created_at->format('d.m.Y') }}
+                                    {{ $u->created_at->diffForHumans() }}</td>
+                                    <td>{{ $u->updated_at->format('d.m.Y') }}
+                                        {{ $u->updated_at->diffForHumans() }}</td>
                                         
-                                <td><strong><a href="/home/inscritos/{{$u->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong></td>
+                                        <td><strong><a href="/home/newsletter/{{$u->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

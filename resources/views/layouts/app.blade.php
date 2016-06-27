@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/vendor/bulma/css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">           
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/sweetalert.css') }}">           
     <title>Seminário Municipal Cidades Inteligentes</title>
   </head>
 <body>
@@ -61,6 +62,8 @@
 <script src="{{ asset('frontend/assets/js/clipboard.min.js') }}"></script>
 <script src="{{ asset('frontend/assets/js/bulma.js') }}"></script>
 <script src="{{ asset('frontend/assets/js/index.js') }}"></script>
-
+<script src="{{ asset('frontend/assets/js/sweetalert.min.js') }}"></script>
+    <!-- Include this after the sweet alert js file -->
+    @include('sweet::alert')
 </body>
 </html>

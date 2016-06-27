@@ -445,21 +445,18 @@
            <div class="columns">
             <div class="column is-half">
             
-                <h4 class="subtitle is-4">Garanta a sua vaga neste grande evento. São apenas 200 vagas.</h4>
+                <h4 class="subtitle is-4">Garanta a sua vaga neste grande evento.</h4>
             
             </div>
           <div class="container">
             <div class="columns is-vcentered is-centered"> 
-                <a class="button is-primary is-outlined is-inverted is-large modal-button" data-target="#modal2">Garanta sua vaga</a>
+            @if( $inscritos->count() < 400 )
+                    <a class="button is-primary is-outlined is-inverted is-large" href="inscricao">Garanta sua vaga</a>
+              @else
+                <a class="button is-primary is-outlined is-inverted is-large" disabled>Inscrições encerradas</a>
+            @endif
             </div>
-           <!--  <div class="columns is-vcentered is-centered">
-              <a class="button is-info is-outlined is-inverted" href="https://github.com/jgthms/bulma">
-                <span class="icon">
-                  <i class="fa fa-facebook-official"></i>
-                </span>
-                <span>entrar com facebook</span>
-              </a>  
-            </div> -->
+          
           </div>
           </div>
         </div>

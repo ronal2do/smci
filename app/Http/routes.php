@@ -14,9 +14,16 @@
 Route::get('/',['as'=>'home' ,function () {
 	$palestrantes = \App\Palestrante::get();
 	$palestras = \App\Palestra::get();
-
-	return view('pages.home', compact('palestrantes', 'palestras'));
+	$inscritos = \App\Inscrito::get();
+	return view('pages.home', compact('palestrantes', 'palestras', 'inscritos'));
 }]);
+Route::get('/inscricao',function () {
+	$inscritos = \App\Inscrito::get();
+	return view('pages.inscricao', compact('inscritos'));
+});
+
+Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
+
 
 Route::get('/privacidade',function () {
 	return view('pages.privacidade');
@@ -64,8 +71,11 @@ Route::group(['prefix' => '/home'], function () {
 	Route::post('/categorias/criar', ['uses'=>'CategoriasController@store', 'as'=> 'categorias.store']);
 	Route::get('/categoria/{slug}/delete', 'CategoriasController@destroy');
 
-	Route::get('/inscritos', ['uses'=>'NewsletterController@index', 'as'=> 'news']);
-	Route::get('/inscritos/{id}/delete', 'NewsletterController@destroy');
+	Route::get('/inscritos', ['uses'=>'InscritoController@index', 'as'=> 'inscritos']);
+	Route::get('/inscritos/{id}/delete', 'InscritoController@destroy');
+
+	Route::get('/newsletter', ['uses'=>'NewsletterController@index', 'as'=> 'news']);
+	Route::get('/newsletter/{id}/delete', 'NewsletterController@destroy');
 
 	Route::get('/usuarios', ['uses'=>'UsersController@index', 'as'=> 'users']);
 	Route::get('/usuario/{id}', ['uses'=>'UsersController@users', 'as'=> 'users.ver']);

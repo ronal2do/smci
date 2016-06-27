@@ -1,0 +1,1 @@
+<img src="http://smci.com.br/mail/confirmacao.png" alt="">

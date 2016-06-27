@@ -22,13 +22,13 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <a href="/home/posts/criar">
+                <a href="/home/newsletter">
                     <div class="card yellow summary-inline">
                         <div class="card-body">
                             <i class="icon fa fa-pencil-square-o fa-4x"></i>
                             <div class="content">
-                                <div class="title">{{ $posts->count() }}</div>
-                                <div class="sub-title">Escrever</div>
+                                <div class="title">{{ $news }}</div>
+                                <div class="sub-title">Newsletter</div>
                             </div>
                             <div class="clear-both"></div>
                         </div>
@@ -55,7 +55,7 @@
                         <div class="card-body">
                             <i class="icon fa fa-rss fa-4x"></i>
                             <div class="content">
-                                <div class="title">{{ $newsletters->count() }}</div>
+                                <div class="title">{{ $inscritos }}</div>
                                 <div class="sub-title">Inscritos</div>
                             </div>
                             <div class="clear-both"></div>
