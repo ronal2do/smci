@@ -84,7 +84,7 @@
         <hr>
            <div class="columns is-vcentered is-centered">
          
-                <a class="button is-success is-outlined is-inverted is-facebook" href="{{ url('auth/facebook') }}">
+                <a class="button is-success is-outlined is-inverted is-facebook" href="http://smci.com.br/callback">
                   <span class="icon">
                     <i class="fa fa-facebook-official"></i>
                   </span>
