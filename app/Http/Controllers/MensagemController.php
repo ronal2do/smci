@@ -14,10 +14,11 @@ class MensagemController extends Controller
 
     public function mensagem(ContatoRequest $request)
     {
-        $dadosForm = $request->all();
+        $dadosForm = $request->all();        
+        //dd($dadosForm);
         $mensagem = Mensagem::create($dadosForm);
-        // dd($dadosForm);
-        return redirect()->route('home/#contato'); 
+
+        return redirect()->route('home'); 
     }
 
     public function newsletter(Request $request)

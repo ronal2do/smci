@@ -24,9 +24,8 @@ class ContatoRequest extends Request {
   public function rules()
   {
     return [
-      'nome'  => 'required|min:3|alpha', //obrigatório com pelomenos 3 caracteres alfabéticos
-      'email' => 'required|email',//obrigatório e deve ser um email
-      'mensagem' => 'required|min:10'//obrigatório com pelo menos 30 caracteres
+      'nome'  => 'required|min:3',
+      'email' => 'required|email'
     ];
   }
  

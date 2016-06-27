@@ -50,7 +50,7 @@
               <div class="control is-horizontal">
              
                   <div class="control">
-                    <button class="button is-primary">Enviar</button>
+                    <button type="submit" class="button is-primary">Enviar</button>
                   </div>
                </div>
                 {!! Form::close() !!} 
