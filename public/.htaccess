@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    Options +FollowSymLinks
+    RewriteCond %{HTTP_HOST} ^www\.(.*)
+    RewriteRule (.*) http://%1/$1 [R=301,L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
@@ -17,8 +21,5 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    RewriteCond %{HTTP_HOST} ^www.smci.com$ [NC]
-    RewriteRule ^(.*)$ http://smci.com/$1 [R=301,L]
 
 </IfModule>

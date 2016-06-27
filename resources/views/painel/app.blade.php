@@ -108,8 +108,7 @@
                         <li class="profile-img">
                             @if (Auth::user()->facebook_id != '')
                             <img src="http://graph.facebook.com/{{ Auth::user()->facebook_id }}/picture?width=300&height=300" class="profile-img">
-                           
-                            @elseif (Auth::user()->social != '')
+                            @else (Auth::user()->social != '')
                             <img src="http://graph.facebook.com/{{ Auth::user()->social->provider_user_id }}/picture?width=300&height=300" class="profile-img">
                             @endif
                             <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Fotos%20apenas%20para%20usu%C3%A1rios%20logados%20pelo%20facebook&w=300&h=300" class="profile-img">
