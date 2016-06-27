@@ -78,7 +78,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('facebook')->redirect('http://smci.com.br/callback');
+        return Socialite::driver('facebook')->redirect();
     }
 
      /**
