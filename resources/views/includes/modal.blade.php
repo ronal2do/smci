@@ -9,7 +9,7 @@
         <div class="media-content">
           <div class="content">
             
-             <h1><strong>Site acessivel</strong></h1>
+             <h1><strong>Site acessível</strong></h1>
             <p> Para facilitar o acesso ao site, você contará com nossos auxílios para melhor acessibilidade das informações.
             </p>
             <!-- <p>
