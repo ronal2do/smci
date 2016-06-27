@@ -1,1 +1,1 @@
-<img src="http://smci.com.br/mail/confirmacao.png" alt="">
+<img src="http://smci.com.br/mail/confirmacao.png" alt="Seminário" width="600px">
