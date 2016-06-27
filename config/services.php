@@ -44,7 +44,7 @@ return [
     'facebook' => [
         'client_id' => '439578256137914',
         'client_secret' => '6cd9106829b0df302c99ff7fe4e220d5',
-        'redirect' => 'http://smci.com.br/callback',
+        'redirect' => 'http://www.smci.com.br/callback',
     ],
 
 ];
