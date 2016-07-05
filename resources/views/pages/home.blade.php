@@ -323,6 +323,8 @@
                    @endforeach
               </tbody>
             </table>
+            *Nomes em confirmação. A programação pode sofrer alteração de acordo com a agenda de cada autoridade. Os outros palestrantes já estão confirmados.
+
           </div>
       </div>    
     </section>
