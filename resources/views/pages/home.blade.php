@@ -323,8 +323,8 @@
                    @endforeach
               </tbody>
             </table>
-            *Nomes em confirmação. A programação pode sofrer alteração de acordo com a agenda de cada autoridade. Os outros palestrantes já estão confirmados.
-
+            <p style="font-size:.8em;">*Nomes em confirmação. A programação pode sofrer alteração de acordo com a agenda de cada autoridade. Os outros palestrantes já estão confirmados.
+</p>
           </div>
       </div>    
     </section>
