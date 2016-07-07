@@ -468,32 +468,3 @@
 @include('includes.modal')
 
 @endsection
-
-@section('postscript')
-<script>
-  var end = new Date('07/09/2016 10:10 AM');
-      var _second = 1000;
-      var _minute = _second * 60;
-      var _hour = _minute * 60;
-      var _day = _hour * 24;
-      var timer;
-      function showRemaining() {
-          var now = new Date();
-          var distance = end - now;
-          if (distance < 0) {
-              clearInterval(timer);
-              document.getElementById('countdown').innerHTML = 'EVENTO EM ANDAMENTO!';
-              return;
-          }
-          var days = Math.floor(distance / _day);
-          var hours = Math.floor((distance % _day) / _hour);
-          var minutes = Math.floor((distance % _hour) / _minute);
-          var seconds = Math.floor((distance % _minute) / _second);
-          document.getElementById('dias').innerHTML = days + ' dias ';
-          document.getElementById('horas').innerHTML = hours + ' hrs ';
-          document.getElementById('minutos').innerHTML = minutes + ' mins ';
-          document.getElementById('segundos').innerHTML = seconds + ' segs';
-      }
-      timer = setInterval(showRemaining, 1000);
-</script>
-@endsection

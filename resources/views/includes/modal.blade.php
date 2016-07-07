@@ -1,4 +1,4 @@
-<div id="modal" class="modal is-active">
+<!-- <div id="modal" class="modal is-active">
   <div class="modal-background"></div>
   <div class="modal-content">
     <div class="box">
@@ -12,18 +12,7 @@
              <h1><strong>Site acessível</strong></h1>
             <p> Para facilitar o acesso ao site, você contará com nossos auxílios para melhor acessibilidade das informações.
             </p>
-            <!-- <p>
-              <audio id="audio-leitura" src="frontend/audio/audio-leitura.m4a"></audio>
-                <a class="navbar-item" onclick="document.getElementById('audio-leitura').play()">
-                <span class="icon is-icon"><i class="fa fa-audio-description"> </i></span>
-              </a>
-              <strong> Aúdio descrição</strong> 
-              <br>
-              Ao clicar neste ícone, você terá a narração do texto. 
-            </p> -->
-             
             
-
             <p>
               <a class="navbar-item cont">
                 <span class="icon is-small"><i class="fa fa-low-vision"> </i></span>
@@ -43,15 +32,6 @@
                 <br>
                Com o auxílio do - e +, você poderá aumentar ou diminuir o tamanho do texto.
             </p>
-
-            <!--  <p>
-              <a class="navbar-item">
-                <span class="icon is-small"><i class="fa fa-keyboard-o"> </i></span>
-              </a>
-              <strong> Atalhos de teclado</strong> 
-              <br>
-              Você pode navegar pelas seções do site com as teclas numéricas do seu teclado.
-            </p> -->
             <audio src="#"></audio>
           </div>
           
@@ -61,7 +41,7 @@
     </div>
   </div>
   <button class="modal-close"></button>
-</div>
+</div> -->
 
 @foreach ($palestrantes as $p)
 <div id="{{$p->slug}}" class="modal">
