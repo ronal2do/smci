@@ -15,6 +15,7 @@ use App\Categoria;
 use App\Palestra;
 use App\Palestrante;
 use App\Inscrito;
+use App\Autoridade;
 
 class HomeController extends Controller
 {
@@ -46,12 +47,13 @@ class HomeController extends Controller
         $posts = Post::orderBy('id', 'desc')->get();
         $palestract = Palestra::count();
         $palestrantect = Palestrante::count();
+        $autoridadect = Autoridade::count();
         $inscritos = Inscrito::count();
         $news = Newsletter::count();
         
         $newsletters = Newsletter::orderBy('id', 'desc')->take(4)->get();
 
-        return view('painel.home', compact('video', 'videos','categorias', 'vidct', 'userct', 'mensagens' , 'newsletters', 'posts', 'palestract', 'palestrantect', 'inscritos', 'news'));
+        return view('painel.home', compact('video', 'videos','categorias', 'vidct', 'userct', 'mensagens' , 'newsletters', 'posts', 'palestract', 'palestrantect', 'autoridadect','inscritos', 'news'));
     }
 
     public function video($slug)

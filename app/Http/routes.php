@@ -13,9 +13,10 @@
 
 Route::get('/',['as'=>'home' ,function () {
 	$palestrantes = \App\Palestrante::get();
+	$autoridades = \App\Autoridade::get();
 	$palestras = \App\Palestra::get();
 	$inscritos = \App\Inscrito::get();
-	return view('pages.home', compact('palestrantes', 'palestras', 'inscritos'));
+	return view('pages.home', compact('palestrantes', 'palestras', 'inscritos', 'autoridades'));
 }]);
 Route::get('/inscricao',function () {
 	$inscritos = \App\Inscrito::get();
@@ -57,6 +58,13 @@ Route::group(['prefix' => '/home'], function () {
 	Route::get('/palestrante/{id}/edit', ['uses'=>'PalestranteController@edit', 'as'=> 'palestrantes.edit']);
 	Route::PATCH('/palestrante/{id}/edit', ['uses'=>'PalestranteController@update', 'as'=> 'palestrantes.update']);
 	Route::get('/palestrante/{slug}/delete', 'PalestranteController@destroy');
+
+	Route::get('/autoridades', ['uses'=>'AutoridadeController@index', 'as'=> 'autoridades']);
+	Route::get('/autoridades/criar', ['uses'=>'AutoridadeController@create', 'as'=> 'autoridades.criar']);
+	Route::post('/autoridades/criar', ['uses'=>'AutoridadeController@store', 'as'=> 'autoridades.store']);
+	Route::get('/autoridade/{id}/edit', ['uses'=>'AutoridadeController@edit', 'as'=> 'autoridades.edit']);
+	Route::PATCH('/autoridade/{id}/edit', ['uses'=>'AutoridadeController@update', 'as'=> 'autoridades.update']);
+	Route::get('/autoridade/{slug}/delete', 'AutoridadeController@destroy');
 
 	Route::get('/palestras', ['uses'=>'PalestraController@index', 'as'=> 'palestras']);
 	Route::get('/palestras/criar', ['uses'=>'PalestraController@create', 'as'=> 'palestras.criar']);

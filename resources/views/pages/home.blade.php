@@ -50,50 +50,51 @@
     </div>
   </div>
 </section>
-    <section id="oquee" class="section is-medium">
-      <div class="container">
-        <h3 class="title is-2">
-            <span class="icon is-large">
-              <i class="fa fa-lightbulb-o"></i>
-            </span>
-            I <strong>Seminário</strong> Metropolitano Cidades Inteligentes 
-          </h3>
-              <nav class="navbar">
-                  <div class="navbar-left">
 
-                    
-                   <a class="navbar-item minus">
-                    <span class="icon is-small"><i class="fa fa-font">-</i></span>
-                  </a>
-                  <a class="navbar-item plus">
-                    <span class="icon is-small"><i class="fa fa-font">+ </i></span>
-                  </a>
-                    <a class="navbar-item cont">
-                      <span class="icon is-small"><i class="fa fa-low-vision"></i></span>
-                    </a>
-                     
-                  </div>
-              </nav>
+<section id="oquee" class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">
+        <span class="icon is-large">
+          <i class="fa fa-lightbulb-o"></i>
+        </span>
+        I <strong>Seminário</strong> Metropolitano Cidades Inteligentes 
+      </h3>
+          <nav class="navbar">
+              <div class="navbar-left">
 
-         <div class="texto-tamanho">
-            <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos pela mobilidade sustentável e segura” é um evento de caráter técnico e institucional sobre mobilidade e saúde.</h4>
-            <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, modais não motorizados, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
-            </h4>
-            
-            <h4 class="subtitle is-4"> O Seminário busca, fundamentalmente, estabelecer objetivos adequados à realidade da Região Metropolitana de São Paulo, capazes de efetivamente contribuir para o alcance das metas estabelecidas pela ONU que visam à redução de acidentes com vítimas fatais.
-            </h4>
+                
+               <a class="navbar-item minus">
+                <span class="icon is-small"><i class="fa fa-font">-</i></span>
+              </a>
+              <a class="navbar-item plus">
+                <span class="icon is-small"><i class="fa fa-font">+ </i></span>
+              </a>
+                <a class="navbar-item cont">
+                  <span class="icon is-small"><i class="fa fa-low-vision"></i></span>
+                </a>
+                 
+              </div>
+          </nav>
 
-            <h4 class="subtitle is-4">O propósito é envolver os diversos setores da sociedade no compromisso em trilhar caminhos mais sustentáveis, seguros e adequados dentro da perspectiva de reversão do panorama atual. 
-            </h4>
+     <div class="texto-tamanho">
+        <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos pela mobilidade sustentável e segura” é um evento de caráter técnico e institucional sobre mobilidade e saúde.</h4>
+        <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, modais não motorizados, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
+        </h4>
+        
+        <h4 class="subtitle is-4"> O Seminário busca, fundamentalmente, estabelecer objetivos adequados à realidade da Região Metropolitana de São Paulo, capazes de efetivamente contribuir para o alcance das metas estabelecidas pela ONU que visam à redução de acidentes com vítimas fatais.
+        </h4>
 
-            <h4 class="subtitle is-4">O desafio está lançado. 
-            </h4>
+        <h4 class="subtitle is-4">O propósito é envolver os diversos setores da sociedade no compromisso em trilhar caminhos mais sustentáveis, seguros e adequados dentro da perspectiva de reversão do panorama atual. 
+        </h4>
 
-            <h4 class="subtitle is-4">Venha fazer parte desse movimento por mobilidade sustentável e segura.  <br>Esperamos por você.
-            </h4>
-         </div>
-            <br><br>  
-    </section>
+        <h4 class="subtitle is-4">O desafio está lançado. 
+        </h4>
+
+        <h4 class="subtitle is-4">Venha fazer parte desse movimento por mobilidade sustentável e segura.  <br>Esperamos por você.
+        </h4>
+     </div>
+        <br><br>  
+</section>
 
     <section id="motivo" class="hero is-medium is-primary is-bold">
       <div class="container">
@@ -331,14 +332,13 @@
 
     <section id="palestrantes" class="hero is-medium is-primary is-bold">
       <div class="container">
-      <h3 class="title is-2  is-text-left">
+          <h3 class="title is-2  is-text-left">
              <br>
                 <span class="icon is-large">
                   <i class="fa fa-cubes"></i>
                 </span>
                 Palestrantes
-
-            </h3>
+          </h3>
          <nav class="navbar">
               <div class="navbar-left">
              
@@ -355,33 +355,10 @@
               </div>
           </nav>
             <h4 class="subtitle is-4  is-text-left">Contaremos com a presença de ilustres palestrantes que irão ministrar discussões e debates para o aprimoramento do tema.</h4>
-           
-        <div class="columns is-vcentered">
-          <div class="column is-text-left">
-         
-            @foreach ($palestrantes as $p)
-              @if ($p->id % 2 == 0)
-              @include('includes.profile')
-             @else
-             @endif 
-           @endforeach
-
             <br>
-
-          </div>
-
-          <div class="column">
-           @foreach ($palestrantes as $p)
-              @if ($p->id % 2 !== 0)
-                @include('includes.profile')
-              @else
-             @endif 
-           @endforeach      
-               <br>  
-          </div>
-
-          
-        </div>
+          @include('includes.abertura')
+          @include('includes.palestrantes')
+          @include('includes.encerramento')
         
       </div>
     </section>

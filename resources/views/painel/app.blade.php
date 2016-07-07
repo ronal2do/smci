@@ -96,6 +96,11 @@
                                         <i class="fa fa-rss icon"></i> Newsletter
                                     </li>
                                 </a>
+                                   <a href="/home/autoridades/criar">
+                                        <li class="list-group-item">
+                                         <i class="fa fa-check icon"></i> Autoridade
+                                     </li>
+                                 </a>
                             </ul>
                         </li>
                     </ul>
