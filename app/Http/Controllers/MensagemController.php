@@ -89,7 +89,7 @@ class MensagemController extends Controller
           Inscrito::create($dadosForm);
         }
             
-        Alert::success('Cadastro efetuado enviada!')->autoclose(4000);
+        Alert::success('Cadastro efetuado com sucesso!')->persistent('Fechar');
 
         Mail::send('emails.welcome', [
                 'email' => $email
