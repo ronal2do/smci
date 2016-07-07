@@ -17,7 +17,7 @@
                
                         {!! Form::model($p, [
                             'method' => 'PATCH',
-                            'route' => ['palestrantes.update', $p->id]
+                            'route' => ['autoridades.update', $p->id]
                         ]) !!}
 
 
@@ -30,7 +30,7 @@
                        
                         <div class="sub-title">Curriculo</div>
                         <div>
-                            {!! Form::textarea('resume', null, ['class' => 'form-control', 'id'=> 'redactor_content']) !!}
+                            {!! Form::textarea('cargo', null, ['class' => 'form-control', 'id'=> 'redactor_content']) !!}
                         </div>
                          
                         <button type="submit" class="btn btn-default">Enviar</button>
