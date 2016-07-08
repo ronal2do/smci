@@ -11,7 +11,7 @@
         <p>
           <strong>{{ $p->name }}</strong>
           <br>
-          {!!str_limit($p->cargo, $limit = 160, $end = '...')!!}
+          {!!$p->cargo!!}
         </p>
       </div>
     <nav class="navbar">
