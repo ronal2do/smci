@@ -14,7 +14,7 @@ class Autoridade extends Model implements SluggableInterface
     protected $table = 'autoridades';
     
     protected $fillable = [
-        'name', 'tipo', 'slug', 'cargo'
+        'name', 'tipo', 'slug', 'cargo', 'ordem'
     ];
 	
 	protected $sluggable = [

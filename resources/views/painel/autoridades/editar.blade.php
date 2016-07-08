@@ -20,11 +20,22 @@
                             'route' => ['autoridades.update', $p->id]
                         ]) !!}
 
-
+                        <div class="sub-title">Ordem</div>
+                  
+                        <div>
+                           {!! Form::text('ordem', null, ['class' => 'form-control', 'placeholder'=> 'Ordem']) !!}
+                          
+                        </div>
                         <div class="sub-title">Nome</div>
                   
                         <div>
                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder'=> 'Título']) !!}
+                          
+                        </div>
+                          <div class="sub-title">Tipo</div>
+                  
+                        <div>
+                           {!! Form::text('tipo', null, ['class' => 'form-control', 'placeholder'=> 'Tipo']) !!}
                           
                         </div>
                        

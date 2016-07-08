@@ -14,7 +14,10 @@
                     </div>
                 </div>
                 <div class="card-body">{!! Form::open(array('url' => 'home/autoridades/criar')) !!}
-                    
+                    <div class="sub-title">Ordem</div>
+                    <div>
+                        <input type="text" class="form-control" name="ordem" placeholder="ordem">
+                    </div>
                     <div class="sub-title">Nome</div>
                   
                     <div>

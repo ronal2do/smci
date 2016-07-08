@@ -20,6 +20,7 @@
                             <tr>
                                 <th>Nome</th>
                                 <th>Tipo</th>
+                                <th>Ordem</th>
                                 <th>Cargo</th>
                                 <th>#</th>
                             </tr>
@@ -28,6 +29,7 @@
                             <tr>
                                 <th>Nome</th>
                                 <th>Tipo</th>
+                                <th>Ordem</th>
                                 <th>Cargo</th>
                                 <th>#</th>
                             </tr>
@@ -37,6 +39,7 @@
                             <tr>
                                 <td>{{ $p->name }}</td>
                                 <td>{{ $p->tipo }}</td>
+                                <td>{{ $p->ordem }}</td>
                                 <td>{!! str_limit($p->cargo, $limit = 95, $end = ' ... ') !!}</td>
                                  <td><strong><a href="/home/autoridade/{{$p->id}}/delete"><i class="fa fa-times-circle"></i> Deletar</a></strong><br><strong><a href="/home/autoridade/{{$p->id}}/edit"><i class="fa fa-pencil"></i> Editar</a></strong></td>
                             </tr>
