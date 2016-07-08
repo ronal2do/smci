@@ -39,10 +39,11 @@
         <div class="column" style="display: block;font-size: 1em;">
               <h1 class="title">
                 <div class="is-success is-text-center">
-                  <span id="dias" class="borda">Dia 28 e 29 de Julho</span>              
-                  <span id="horas" class="borda"></span>
-                  <span id="minutos" class="borda is-hidden-touch"></span>
-                  <span id="segundos" class="borda is-hidden-touch"></span>
+                <br>
+                  <span id="dias" class="titulo-seminario">Dia 28 e 29 de Julho</span><br>         
+
+                   <span class="titulo-seminario">Inscrições abertas até o dia 25 de julho.</span>
+           
               </div>
               </h1>
             </div>
@@ -295,7 +296,7 @@
            <div class="columns">
             <div class="column is-half">
             
-                <h4 class="subtitle is-4">Garanta a sua vaga neste grande evento.</h4>
+                <h4 class="subtitle is-4">Inscrições abertas até o dia 25 de julho.</h4>
             
             </div>
           <div class="container">

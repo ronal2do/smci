@@ -17,7 +17,7 @@
             <a href="/#programacao">Programação</a>
           </span>    
           <span class="header-item">
-            <a href="/#palestrantes">Palestrantes</a>
+            <a href="/#palestrantes">Participantes</a>
           </span> 
           <span class="header-item">
             <a href="/#onde">Local</a>
