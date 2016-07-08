@@ -5,7 +5,7 @@
   <div class="column is-text-left">
       @foreach ($autoridades as $p)
         @if ($p->tipo === "A")
-          @if ($p->id % 2 !== 0)
+          @if ($p->ordem % 2 !== 0)
            @include('includes.autoridade')
           @else
           @endif 
@@ -17,7 +17,7 @@
   <div class="column">
      @foreach ($autoridades as $p)
         @if ($p->tipo === "A")
-          @if ($p->id % 2 == 0)
+          @if ($p->ordem % 2 == 0)
            @include('includes.autoridade')
           @else
           @endif 
