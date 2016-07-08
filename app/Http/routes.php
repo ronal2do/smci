@@ -12,8 +12,8 @@
 */
 
 Route::get('/',['as'=>'home' ,function () {
-	$palestrantes = \App\Palestrante::orderBy('name', 'asc')->get();
-	$autoridades = \App\Autoridade::orderBy('name', 'asc')->get();
+	$palestrantes = \App\Palestrante::get();
+	$autoridades = \App\Autoridade::get();
 	$palestras = \App\Palestra::get();
 	$inscritos = \App\Inscrito::get();
 	return view('pages.home', compact('palestrantes', 'palestras', 'inscritos', 'autoridades'));
