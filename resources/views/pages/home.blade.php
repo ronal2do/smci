@@ -36,7 +36,7 @@
           </div>
    
         </h1>
-        <div class="column" style="display: block;font-size: 1em;">
+           <div class="column" style="display: block;font-size: 1em;">
               <h1 class="title">
                 <div class="is-success is-text-center">
                 <br>
@@ -296,6 +296,7 @@
            <div class="columns">
             <div class="column is-half">
             
+                <h4 class="subtitle is-4">Garanta a sua vaga neste grande evento.</h4>
                 <h4 class="subtitle is-4">Inscrições abertas até o dia 25 de julho.</h4>
             
             </div>
