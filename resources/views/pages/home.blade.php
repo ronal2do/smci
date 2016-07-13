@@ -79,7 +79,7 @@
 
      <div class="texto-tamanho">
         <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos pela mobilidade sustentável e segura” é um evento de caráter técnico e institucional sobre mobilidade e saúde.</h4>
-        <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, modais não motorizados, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
+        <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, mobilidade ativa, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
         </h4>
         
         <h4 class="subtitle is-4"> O Seminário busca, fundamentalmente, estabelecer objetivos adequados à realidade da Região Metropolitana de São Paulo, capazes de efetivamente contribuir para o alcance das metas estabelecidas pela ONU que visam à redução de acidentes com vítimas fatais.
