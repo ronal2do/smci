@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/vendor/bulma/css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">           
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/sweetalert.css') }}">           
-    <title>Seminário Municipal Cidades Inteligentes</title>
+    <title>Seminário Metropolitano Cidades Inteligentes</title>
   </head>
 <body>
 <style>

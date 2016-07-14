@@ -78,20 +78,20 @@
           </nav>
 
      <div class="texto-tamanho">
-        <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos pela mobilidade sustentável e segura” é um evento de caráter técnico e institucional sobre mobilidade e saúde.</h4>
-        <h4 class="subtitle is-4">Serão dois dias de debates, troca de experiências e de informações com foco no transporte público, mobilidade ativa, que inclui ciclistas e pedestres, e no meio ambiente, priorizando os diversos impactos na saúde pública. 
+        <h4 class="subtitle is-4">O Seminário Metropolitano “Cidades Inteligentes – Juntos – pela Mobilidade Urbana Sustentável e Segura” abordará, técnica e institucionalmente, as temáticas que envolvem a mobilidade urbana e a saúde nas cidades da Região Metropolitana de São Paulo-RMSP.</h4>
+        <h4 class="subtitle is-4">Em dois dias, ocorrerá, neste Seminário debates, compartilhamento de experiências e de informações relativas a Transporte Público, Mobilidade Ativa – ciclistas e pedestres – e Meio Ambiente que impactem a saúde das pessoas. 
         </h4>
         
-        <h4 class="subtitle is-4"> O Seminário busca, fundamentalmente, estabelecer objetivos adequados à realidade da Região Metropolitana de São Paulo, capazes de efetivamente contribuir para o alcance das metas estabelecidas pela ONU que visam à redução de acidentes com vítimas fatais.
+        <h4 class="subtitle is-4"> Este I Seminário criará o cenário ideal para estabelecer os objetivos comuns à realidade da RMSP, necessários ao atendimento das metas estabelecidas pela ONU, que visam à redução das mortes em acidentes de trânsito. 
         </h4>
 
-        <h4 class="subtitle is-4">O propósito é envolver os diversos setores da sociedade no compromisso em trilhar caminhos mais sustentáveis, seguros e adequados dentro da perspectiva de reversão do panorama atual. 
+        <h4 class="subtitle is-4">Com o envolvimento dos diversos setores da sociedade e o compromisso unificado das cidades da RMSP em trilhar caminhos sustentáveis, seguros e confortáveis para as pessoas, a perspectiva de reversão do triste panorama atual é possível.
         </h4>
 
         <h4 class="subtitle is-4">O desafio está lançado. 
         </h4>
 
-        <h4 class="subtitle is-4">Venha fazer parte desse movimento por mobilidade sustentável e segura.  <br>Esperamos por você.
+        <h4 class="subtitle is-4">Venha participar deste movimento pela Mobilidade Urbana Sustentável e Segura. <br>Contamos com você!
         </h4>
      </div>
         <br><br>  
@@ -150,7 +150,7 @@
                            
                         </div>
                       </nav></h3>
-                         Entender o comportamento dos paulistas no seu modo de se relacionar com a mobilidade urbana, em especial: na utilização do cinto de segurança, rodízio, corredores e faixas exclusivas de ônibus, ciclovias, ruas de lazer, redução da velocidade nas vias e multas de trânsito.
+                         Entender o comportamento dos paulistas na sua relação com alguns itens essenciais da mobilidade urbana – uso de cinto de segurança, rodízio de veículos, corredores e faixas exclusivas de ônibus, ciclovias, ruas de lazer, vias com redução de velocidade, radares e multas de trânsito.
                         
                     </div>
                   </div>
@@ -176,7 +176,7 @@
                            
                         </div>
                       </nav></h3>
-                       Revelar experiências bem-sucedidas na priorização do transporte público e no incentivo ao uso do transporte não motorizado, como a bicicleta. Como garantir a segurança do pedestre e de cidadãos com deficiência de locomoção (cadeirantes, deficientes visuais).
+                       Revelar experiências bem-sucedidas na priorização do transporte público e no incentivo ao uso da Mobilidade Ativa – ciclistas e pedestres – garantindo a segurança àqueles com necessidades especiais em sua mobilidade (cadeirantes, deficientes visuais etc.)
                     </div>
                   </div>
           </div>  
@@ -222,7 +222,7 @@
                            
                         </div>
                       </nav></h3>
-                         Ampliar canais para comunicar com transparência as informações, a participação social e a consolidação de parcerias.
+                       Ampliar canais de comunicação acessíveis com informações confiáveis, atualizadas e transparentes. Promover a participação social e a consolidação de parcerias.
                        
                     </div>
                   </div>
