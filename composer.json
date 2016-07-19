@@ -13,7 +13,9 @@
         "nesbot/carbon": "^1.21",
         "jenssegers/date": "^3.2",
         "guzzlehttp/guzzle": "^6.2",
-        "uxweb/sweet-alert": "^1.1"
+        "uxweb/sweet-alert": "^1.1",
+        "laravelcollective/bus": "^5.2",
+        "maatwebsite/excel": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

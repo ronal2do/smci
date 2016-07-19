@@ -11,6 +11,7 @@ use App\Http\Requests\ContatoRequest;
 use App\Mensagem; 
 use App\Newsletter;
 use App\Inscrito;
+use Excel;
 
 class MensagemController extends Controller
 {
@@ -102,7 +103,16 @@ class MensagemController extends Controller
         // dd($dadosForm);
         return redirect()->route('home'); 
     }
-
+    public function downloadExcel($type)
+    {
+        $data = Inscrito::get()->toArray();
+        return Excel::create('inscritos', function($excel) use ($data) {
+            $excel->sheet('mySheet', function($sheet) use ($data)
+            {
+                $sheet->fromArray($data);
+            });
+        })->download($type);
+    }
     public function ver($id)
     {
         $m = Mensagem::find($id);

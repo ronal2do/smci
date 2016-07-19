@@ -12,6 +12,9 @@
 
                     <div class="card-title">
                         <div class="title">Usuários</div>
+                            <a href="{{ URL::to('downloadExcel/xls') }}"><button class="btn btn-success">Download Excel xls</button></a>
+                            <a href="{{ URL::to('downloadExcel/xlsx') }}"><button class="btn btn-success">Download Excel xlsx</button></a>
+                            <a href="{{ URL::to('downloadExcel/csv') }}"><button class="btn btn-success">Download CSV</button></a>
                     </div>
                 </div>
                 <div class="card-body">

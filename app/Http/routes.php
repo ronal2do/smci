@@ -24,6 +24,7 @@ Route::get('/inscricao',function () {
 });
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
+Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
 
 
 Route::get('/privacidade',function () {

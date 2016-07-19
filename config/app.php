@@ -168,6 +168,8 @@ return [
 
         'Jenssegers\Date\DateServiceProvider',
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Collective\Bus\BusServiceProvider::class,
     ],
 
     /*
@@ -218,6 +220,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Date' => Jenssegers\Date\Date::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
