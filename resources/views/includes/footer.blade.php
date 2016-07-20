@@ -22,7 +22,7 @@
       <div class="column is-3">
       Apoio:
       <br>
-           <figure class="image is-centered" style="max-width: 160px;height:165px;">
+           <figure class="image is-centered" style="max-width: 313px;height:165px;">
                         <img src="/frontend/imagens/apoio.png">
           
           </figure>
