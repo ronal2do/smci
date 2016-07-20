@@ -19,7 +19,7 @@
           
           </figure>
       </div>
-      <div class="column is-2">
+      <div class="column is-3">
       Apoio:
       <br>
            <figure class="image is-centered" style="max-width: 160px;height:165px;">
@@ -34,7 +34,7 @@
        <strong>COSEMS - SP</strong>    - Conselho de Secretários Municipais de Saúde do Estado de São Paulo 
   
       </div> -->
-      <div class="column is-4">
+      <div class="column is-3">
          Patrocínio:
           <figure class="image is-half" style="max-width: 465px;height:165px;">
             <!-- <img src="/frontend/imagens/publico.png"> -->
