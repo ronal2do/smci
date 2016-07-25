@@ -20,7 +20,7 @@ class MensagemController extends Controller
     public function mensagem(ContatoRequest $request)
     {
         $dadosForm = $request->all();
-         $email  = $dadosForm['email'];         
+        $email  = $dadosForm['email'];         
         //dd($dadosForm);
         $mensagem = Mensagem::create($dadosForm);
             
@@ -32,6 +32,7 @@ class MensagemController extends Controller
             ], function ($m) use ($email) {
             
             $m->to($email)
+            ->cc('seminariocidadesinteligentes@gmail.com')
               ->subject("SMCI");
         });
 
@@ -65,6 +66,7 @@ class MensagemController extends Controller
             ], function ($m) use ($email) {
             
             $m->to($email)
+              ->cc('seminariocidadesinteligentes@gmail.com')
               ->subject("SMCI");
         });
 
@@ -97,6 +99,7 @@ class MensagemController extends Controller
             ], function ($m) use ($email) {
             
             $m->to($email)
+            ->cc('seminariocidadesinteligentes@gmail.com')
               ->subject("SMCI");
         });
 

@@ -43,7 +43,7 @@ class HomeController extends Controller
         $categorias = Categoria::orderBy('id', 'desc')->get();
         $vidct = Video::count();
         $userct = User::count();
-        $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
+        $mensagens = Mensagem::orderBy('id', 'desc')->get();
         $posts = Post::orderBy('id', 'desc')->get();
         $palestract = Palestra::count();
         $palestrantect = Palestrante::count();
