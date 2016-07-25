@@ -18,10 +18,10 @@ Route::get('/',['as'=>'home' ,function () {
 	$inscritos = \App\Inscrito::get();
 	return view('pages.home', compact('palestrantes', 'palestras', 'inscritos', 'autoridades'));
 }]);
-// Route::get('/inscricao',function () {
-// 	$inscritos = \App\Inscrito::get();
-// 	return view('pages.inscricao', compact('inscritos'));
-// });
+Route::get('/inscricao',function () {
+	$inscritos = \App\Inscrito::get();
+	return view('pages.inscricao', compact('inscritos'));
+});
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
 Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
