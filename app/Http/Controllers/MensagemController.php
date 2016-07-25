@@ -32,7 +32,7 @@ class MensagemController extends Controller
             ], function ($m) use ($email) {
             
             $m->to($email)
-            ->cc('seminariocidadesinteligentes@gmail.com')
+              ->cc('seminariocidadesinteligentes@gmail.com')
               ->subject("SMCI");
         });
 
