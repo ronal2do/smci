@@ -302,7 +302,7 @@
             </div>
           <div class="container">
             <div class="columns is-vcentered is-centered"> 
-            @if( $inscritos->count() < 400 )
+            @if( $inscritos->count() < 338 )
                     <a class="button is-primary is-outlined is-inverted is-large" href="inscricao">Garanta sua vaga</a>
               @else
                 <a class="button is-primary is-outlined is-inverted is-large" disabled>Inscrições encerradas</a>
