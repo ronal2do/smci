@@ -29,7 +29,7 @@
             <a data-target="#modal2" class="modal-button">Assista<span class="numero">[7]</span></a>
           </span> -->
           <span class="header-item">
-         @if( $inscritos->count() < 400)
+         @if( $inscritos->count() < 357)
           <a class="button is-info is-outlined is-inverted" href="/inscricao">
           
           <!--   <span class="icon">

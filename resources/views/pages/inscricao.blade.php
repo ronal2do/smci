@@ -36,7 +36,7 @@
       <div class="container">
          <div class="container">
             
-               @if( $inscritos->count() < 400 )
+               @if( $inscritos->count() < 357 )
             <p class="subtitle is-4">
             Formulário
             </p>
