@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url"                content="http://smci.com.br" />
+    <meta property="og:type"               content="site" />
+    <meta property="og:title"              content="Seminário Metropolitano Cidades Inteligentes" />
+    <meta property="og:description"        content="I Seminário Metropolitano Cidades Inteligentes juntos pela mobilidade sustentável e segura" />
+    <meta property="og:image"              content="http://smci.com.br/frontend/imagens/facebook-og.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/vendor/bulma/css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">           
