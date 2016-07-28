@@ -36,39 +36,39 @@
       <div class="container">
 
             <div class="columns">
-              <div class="column is-three-quarters">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
-                </div>   
-              </div>
-              <div class="column">
-
-              <div class="card is-fullwidth">
-                  <header class="card-header">
-                    <p class="card-header-title">
-                      Vídeos
-                    </p>
-                  </header>
-
-                @forelse ($videos as $v)
+              <div class="column is-8">
                 
-                <div class="card-content">
-                    <div class="content">
-                        <a href="/video/{{ $v->slug }}">
-                            <li>
-                                <img src="http://img.youtube.com/vi/{{ $v->url }}/2.jpg" class="profile-img pull-left">
-                                <div class="message-block">
-                                    <div><span class="username">{{ $v->titulo }}</span> 
-                                    </div>
-                                    
-                                </div>
-                            </li>
-                        </a>
-                    </div>
-                </div>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
 
-                @empty
-                @endforelse
+              </div>
+              <div class="column is-4">
+
+                  <div class="card is-fullwidth">
+                          <header class="card-header">
+                            <p class="card-header-title">
+                              Vídeos
+                            </p>
+                          </header>
+
+                        @forelse ($videos as $v)
+                        
+                        <div class="card-content">
+                            <div class="content">
+                                <a href="/video/{{ $v->slug }}">
+                                    <li>
+                                        <img src="http://img.youtube.com/vi/{{ $v->url }}/default.jpg" class="profile-img pull-left">
+                                        <div class="message-block">
+                                            <div><span class="username">{{ $v->titulo }}</span> 
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+
+                        @empty
+                        @endforelse
 
 
                   </div>
