@@ -23,10 +23,11 @@ Route::get('/inscricao',function () {
 	return view('pages.inscricao', compact('inscritos'));
 });
 Route::get('/assista',function () {
-	
+
+	$inscritos = \App\Inscrito::get();
 	$video = \App\Video::where('isfeatured', 'on')->orderBy('id', 'desc')->first();
 	$videos = \App\Video::orderBy('id', 'asc')->get();
-	return view('pages.video', compact('videos', 'video'));
+	return view('pages.video', compact('videos', 'video','inscritos'));
 });
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
