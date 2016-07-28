@@ -44,9 +44,10 @@
             </span> -->
             <span>Blog</span>
           </a>
-          <a data-target="#modal2" class="modal-button button is-info is-outlined is-inverted" data-social-network="Twitter" data-social-action="tweet">
+          <a class="button is-info is-outlined is-inverted" href="/assista">
+          
           <!--   <span class="icon">
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-commenting-o"></i>
             </span> -->
             <span>Assista</span>
           </a>
