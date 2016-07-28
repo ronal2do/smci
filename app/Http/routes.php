@@ -23,8 +23,9 @@ Route::get('/inscricao',function () {
 	return view('pages.inscricao', compact('inscritos'));
 });
 Route::get('/assista',function () {
-	$video = \App\Video::orderBy('id', 'asc')->get();
-	return view('pages.video', compact('video'));
+	$video = Video::where('isfeatured', 'on')->orderBy('id', 'desc')->first();
+	$videos = \App\Video::orderBy('id', 'asc')->get();
+	return view('pages.video', compact('videos', 'video'));
 });
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);

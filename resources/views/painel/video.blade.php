@@ -11,7 +11,17 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
                         </div>                                   
-                      
+                        @if  (Auth::user()->perm == 'dom')                                   
+                        <div class="card card-success">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <div class="title">
+                                        <a href="/home/video/{{ $video->slug }}/delete"><i class="fa fa-times-circle"></i></a>                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
