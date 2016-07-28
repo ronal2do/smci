@@ -54,15 +54,13 @@
 
                         <article class="media">
                             <a href="/video/{{ $v->slug }}">
-                                  <figure class="media-left" style="padding:30px;">
-                                    <p class="image">
+                                  <figure class="media-left" style="padding:0 30px;">
+                                    <p class="image is-128x64">
                                       <img src="http://img.youtube.com/vi/{{ $v->url }}/default.jpg" class="profile-img pull-left">
                                     </p>
                                   </figure>
                                   <div class="media-content">
-                                        <div>
-                                        <span>{{ $v->titulo }}</span>
-                                        </div>
+                                        <div><span class="username">{{ $v->titulo }}</span></div>
                                   </div>
                             </a>
                         </article>
