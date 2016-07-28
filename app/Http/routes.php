@@ -30,13 +30,7 @@ Route::get('/assista',function () {
 	return view('pages.video', compact('videos', 'video','inscritos'));
 });
 
-Route::get('/assista/{slug}',function () {
-
-	$inscritos = \App\Inscrito::get();
-	$video = \App\Video::findBySlug($slug);
-	$videos = \App\Video::orderBy('id', 'asc')->get();
-	return view('pages.video', compact('videos', 'video','inscritos'));
-});
+Route::get('/assista/{slug}', 'AssistaController@video');
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
 Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
