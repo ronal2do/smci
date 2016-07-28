@@ -24,6 +24,7 @@ Route::get('/inscricao',function () {
 });
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
+Route::post('/video/{slug}', ['uses'=>'HomeController@videohome', 'as'=> 'video.home']);
 Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
 
 
@@ -32,7 +33,7 @@ Route::get('/privacidade',function () {
 });
 
 Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
-Route::get('/callback', 'Auth\AuthController@handleProviderCallback');
+Route::get('/callback', 	'Auth\AuthController@handleProviderCallback');
 Route::auth();
 
 Route::group(['prefix' => '/home'], function () {

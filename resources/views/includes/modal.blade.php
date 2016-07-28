@@ -4,12 +4,13 @@
     <div class="box">
       <article class="media">
         <div class="media-left">
-          <i class="fa fa-universal-access 2x"></i>
+          <i class="fa fa-exclamation-circle 2x"></i>
         </div>
         <div class="media-content">
           <div class="content">
             
-             <h1><strong>Comunicado!</strong></h1>
+             <h1><strong>Comunicado.</strong></h1>
+             <br>
             <p> Por motivo de força maior, o evento que aconteceria na data de hoje está suspenso. Pedimos desculpas a todos os envolvidos.
             </p>
             
