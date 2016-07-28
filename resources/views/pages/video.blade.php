@@ -38,7 +38,7 @@
             <div class="columns">
               <div class="column is-8">
                 
-                    <iframe width="100%" height="415" class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
+                    <iframe width="100%" height="375" class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
 
               </div>
               <div class="column is-4">
