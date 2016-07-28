@@ -1,4 +1,4 @@
-<!-- <div id="modal" class="modal is-active">
+<div id="modal" class="modal is-active">
   <div class="modal-background"></div>
   <div class="modal-content">
     <div class="box">
@@ -9,30 +9,11 @@
         <div class="media-content">
           <div class="content">
             
-             <h1><strong>Site acessível</strong></h1>
-            <p> Para facilitar o acesso ao site, você contará com nossos auxílios para melhor acessibilidade das informações.
+             <h1><strong>Comunicado!</strong></h1>
+            <p> Por motivo de força maior, o evento que aconteceria na data de hoje está suspenso. Pedimos desculpas a todos os envolvidos.
             </p>
             
-            <p>
-              <a class="navbar-item cont">
-                <span class="icon is-small"><i class="fa fa-low-vision"> </i></span>
-              </a>
-              <strong> Contraste</strong> 
-              <br>
-              Escurece o fundo e clareia a letra, facilitando a visibilidade.
-            </p>
-            <p class="texto">
-                <a class="navbar-item minus">
-                  <span class="icon is-small"><i class="fa fa-font">-</i></span>
-                </a>
-                <a class="navbar-item plus">
-                  <span class="icon is-small"><i class="fa fa-font">+ </i></span>
-                </a>
-                <strong> Fonte ajustável</strong> 
-                <br>
-               Com o auxílio do - e +, você poderá aumentar ou diminuir o tamanho do texto.
-            </p>
-            <audio src="#"></audio>
+            
           </div>
           
      
@@ -41,7 +22,7 @@
     </div>
   </div>
   <button class="modal-close"></button>
-</div> -->
+</div>
 
 @foreach ($palestrantes as $p)
 <div id="{{$p->slug}}" class="modal">
