@@ -25,7 +25,7 @@ Route::get('/inscricao',function () {
 Route::get('/assista',function () {
 
 	$inscritos = \App\Inscrito::get();
-	$video = \App\Video::where('isfeatured', 'on')->orderBy('id', 'asc')->take(1)->get();
+	$video = \App\Video::where('isfeatured', 'on')->orderBy('id', 'asc')->first();
 	$videos = \App\Video::orderBy('id', 'asc')->get();
 	return view('pages.video', compact('videos', 'video','inscritos'));
 });
