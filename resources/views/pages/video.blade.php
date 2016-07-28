@@ -54,7 +54,7 @@
 
                         <article class="media">
                             <a href="/video/{{ $v->slug }}">
-                                  <figure class="media-left" style="padding:0 30px; float:left;">
+                                  <figure class="media-left" style="float:left;">
                                    
                                       <img src="http://img.youtube.com/vi/{{ $v->url }}/default.jpg" class="profile-img pull-left">
                                    
@@ -66,8 +66,6 @@
                         </article>
                         @empty
                         @endforelse
-
-
                   </div>
               </div>
 
