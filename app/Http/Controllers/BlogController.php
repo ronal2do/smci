@@ -12,14 +12,19 @@ use App\Inscrito;
 use Jenssegers\Date\Date;
 use Illuminate\Support\Facades\Input;
 
+use App\Video;
+use App\User;
+
+use App\Mensagem;
+
 class BlogController extends Controller
 {
     public function video($slug)
     {
         $video = Video::findBySlug($slug);
-        $videos = Video::orderBy('id', 'desc')->take(4)->get();
-        $vidadm = Video::orderBy('id', 'desc')->take(4)->get();
-        $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
+        $videos = Video::orderBy('id', 'desc')->get();
+        $vidadm = Video::orderBy('id', 'desc')->get();
+        // $mensagens = Mensagem::orderBy('id', 'desc')->get();
         return view('pages.video', compact('video', 'videos','vidadm'));        
     }
 
