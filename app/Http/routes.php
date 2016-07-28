@@ -33,7 +33,7 @@ Route::get('/assista',function () {
 Route::get('/assista/{slug}',function () {
 
 	$inscritos = \App\Inscrito::get();
-	$video = Video::findBySlug($slug);
+	$video = \App\Video::findBySlug($slug);
 	$videos = \App\Video::orderBy('id', 'asc')->get();
 	return view('pages.video', compact('videos', 'video','inscritos'));
 });

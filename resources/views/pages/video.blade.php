@@ -53,7 +53,7 @@
                         @forelse ($videos as $v)
 
                         <article class="media">
-                            <a href="/video/{{ $v->slug }}">
+                            <a href="/assista/{{ $v->slug }}">
                                   <figure class="media-left" style="float:left;">
                                    
                                       <img src="http://img.youtube.com/vi/{{ $v->url }}/default.jpg" class="profile-img pull-left">
