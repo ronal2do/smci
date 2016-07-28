@@ -22,9 +22,12 @@ Route::get('/inscricao',function () {
 	$inscritos = \App\Inscrito::get();
 	return view('pages.inscricao', compact('inscritos'));
 });
+Route::get('/assista',function () {
+	$video = \App\Video::orderBy('id', 'asc')->get();
+	return view('pages.video', compact('video'));
+});
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
-Route::get('/video', ['uses'=>'BlogController@video', 'as'=> 'video.home']);
 Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
 
 
