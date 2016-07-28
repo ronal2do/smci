@@ -32,7 +32,9 @@
   </div>
 </section>
             
-
+    <section class="section is-medium">
+      <div class="container">
+         <div class="container">
 
 
 
@@ -82,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-
+</div></div></section>
 <!-- <div class="container-fluid">     
     <div class="row no-margin-bottom">
         <div class="col-sm-12 col-xs-12">
