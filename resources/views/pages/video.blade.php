@@ -59,7 +59,7 @@
                                       <img src="http://img.youtube.com/vi/{{ $v->url }}/default.jpg" class="profile-img pull-left">
                                    
                                   </figure>
-                                  <div class="media-content" style="padding:0 30px; float:right;">
+                                  <div class="media-content" style="padding:0 3px; float:right;">
                                         <div><span class="username">{{ $v->titulo }}</span></div>
                                   </div>
                             </a>
