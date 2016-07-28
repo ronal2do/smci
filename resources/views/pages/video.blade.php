@@ -20,25 +20,13 @@
                 <div class="card card-success">
                     <div class="card-header">
                         <div class="card-title">
-                            <div class="title"><i class="fa fa-youtube"></i> Ultimos Vídeos</div>
+                            <div class="title"><i class="fa fa-youtube"></i>Vídeos</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
                     <div class="card-body no-padding">
                         <ul class="message-list">
-                            @forelse ($videos as $v)
-                            <a href="/video/{{ $v->slug }}">
-                                <li>
-                                    <img src="http://img.youtube.com/vi/fYbc0EU0hjI/2.jpg" class="profile-img pull-left">
-                                    <div class="message-block">
-                                        <div><span class="username">{{ $v->titulo }}</span> 
-                                        </div>
-                                        
-                                    </div>
-                                </li>
-                            </a>
-                            @empty
-                            @endforelse
+                          
                         </ul>
                     </div>
                 </div>
