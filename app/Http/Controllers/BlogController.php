@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Input;
 
 class BlogController extends Controller
 {
+    public function video($slug)
+    {
+        $video = Video::findBySlug($slug);
+        $videos = Video::orderBy('id', 'desc')->take(4)->get();
+        $vidadm = Video::orderBy('id', 'desc')->take(4)->get();
+        $mensagens = Mensagem::orderBy('id', 'desc')->take(4)->get();
+        return view('pages.video', compact('video', 'videos','vidadm'));        
+    }
+
 	public function index()
     {
         $posts = Post::orderBy('id', 'desc')->get();
