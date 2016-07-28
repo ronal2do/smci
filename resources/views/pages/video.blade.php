@@ -9,19 +9,9 @@
                 <div class="row">
                     <div class="col-xs-12">                       
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->url }}?rel=0"></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fYbc0EU0hjIrel=0"></iframe>
                         </div>                                   
-                        @if  (Auth::user()->perm == 'dom')                                   
-                        <div class="card card-success">
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <div class="title">
-                                        <a href="/home/video/{{ $video->slug }}/delete"><i class="fa fa-times-circle"></i></a>                     
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endif
+                        
                     </div>
                 </div>
             </div>
@@ -37,9 +27,9 @@
                     <div class="card-body no-padding">
                         <ul class="message-list">
                             @forelse ($videos as $v)
-                            <a href="/home/video/{{ $v->slug }}">
+                            <a href="/video/{{ $v->slug }}">
                                 <li>
-                                    <img src="http://img.youtube.com/vi/{{ $v->url }}/2.jpg" class="profile-img pull-left">
+                                    <img src="http://img.youtube.com/vi/fYbc0EU0hjI/2.jpg" class="profile-img pull-left">
                                     <div class="message-block">
                                         <div><span class="username">{{ $v->titulo }}</span> 
                                         </div>
