@@ -24,7 +24,7 @@ Route::get('/inscricao',function () {
 });
 
 Route::post('/inscricao', ['uses'=>'MensagemController@inscrito', 'as'=> 'inscricao.criar']);
-Route::post('/video/{slug}', ['uses'=>'HomeController@videohome', 'as'=> 'video.home']);
+Route::get('/video/{slug}', ['uses'=>'HomeController@videohome', 'as'=> 'video.home']);
 Route::get('downloadExcel/{type}', 'MensagemController@downloadExcel');
 
 
