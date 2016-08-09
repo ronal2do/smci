@@ -65,6 +65,7 @@
                             </a>
                         </article>
                         @empty
+                        <p>No users</p>
                         @endforelse
                   </div>
               </div>

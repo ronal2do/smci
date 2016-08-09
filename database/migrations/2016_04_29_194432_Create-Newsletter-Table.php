@@ -12,7 +12,7 @@ class CreateNewsletterTable extends Migration
      */
     public function up()
     {
-        Schema::create('newsletters', function (Blueprint $table) {
+        Schema::create('newsletter', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email')->unique()->nullable();            
             $table->timestamps();

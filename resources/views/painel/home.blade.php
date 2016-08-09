@@ -250,30 +250,6 @@
 
 @endif
 
-<div class="container-fluid">
- 
-    <div class="row no-margin-bottom">
-        <div class="col-sm-12 col-xs-12">
-            <div class="row">
-                <div class="col-xs-12">                       
-                    <style>
-                        .advertising{
-                            height:72px;
-                            border: 1px #000 solid;
-                            margin:15px;
-                            text-align:center;
-                        }
-                    </style>
-                    <div class="advertising">
-                     Publicidade
-                 </div>
-             </div>
-         </div>
-     </div>
 
-     
- </div>
- 
-</div>
 
 @endsection

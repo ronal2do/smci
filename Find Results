@@ -1,0 +1,10 @@
+Searching 7465 files for "#inscreva-se" (case sensitive)
+
+/Users/sotaque/Desktop/SITES-LIBERADA/smci/app/Http/Middleware/Authenticate.php:
+   22                  return response('Unauthorized.', 401);
+   23              } else {
+   24:                 return redirect()->guest('/login');
+   25              }
+   26          }
+
+1 match in 1 file
