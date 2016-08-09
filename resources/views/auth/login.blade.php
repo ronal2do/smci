@@ -36,6 +36,7 @@
     <div class="is-half is-offset-one-quarter">
 
             <div class="panel panel-default">
+            <br>
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
@@ -64,6 +65,7 @@
                           <button type="submit" class="button is-success">
                             Login
                           </button>
+                          <a class="button is-facebook" style="background: #268bd2; color: white;" href="http://smci.com.br/auth/facebook">facebook</a>
                         </p>
                     </form>
                 </div>
